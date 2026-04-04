@@ -159,6 +159,12 @@ body {
 }
 
 /* Get In Touch button */
+.nav-contact-button {
+    /* justify-content: flex-end; */
+    position: absolute;
+    right: 0;
+}
+
 .btn-touch {
     background: var(--primary-green);
     color: white !important;
@@ -216,8 +222,8 @@ body {
 }
 
 .hero h2 {
-    font-size: clamp(36px, 8vw, 48px);
-    font-weight: 600;
+    font-size: clamp(36px, 8vw, 40px);
+    font-weight: 400;
     margin-bottom: 20px;
     /* margin-left: -30px; */
     line-height: 1.2;
@@ -405,9 +411,18 @@ body {
 }
 
 /* Stats Section */
-/* .stats {
+.stats {
     padding: 80px 0;
-    background: rgba(59, 130, 246, 0.05);
+    background: var(--primary-orange);
+}
+
+.stats h2 {
+    color: var(--primary-yellow);
+    text-shadow: var(--shadow);
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 50px;
+    font-weight: 700;
 }
 
 .stats-grid {
@@ -444,7 +459,7 @@ body {
 .stat-card p {
     color: var(--med-text);
     font-size: 16px;
-} */
+}
 
 
 /* Experience Section */
@@ -905,89 +920,64 @@ body {
 
 .contact-methods {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
+    flex-direction: row;
+    gap: 15px;
+    flex-wrap: wrap;
 }
 
 .contact-method {
     display: flex;
-    gap: 15px;
-    align-items: flex-start;
-    padding: 15px;
-    margin-bottom: 15px;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 12px 15px;
     background: var(--primary-pink);
     border-radius: 8px;
+    flex: 1;
+    min-width: 120px;
+    text-align: center;
 }
 
 .method-icon {
-    font-size: 24px;
-    min-width: 24px;
+    font-size: 20px;
+    min-width: 20px;
 }
 
 .contact-method strong {
     color: var(--dark-text);
     display: block;
-    margin-bottom: 5px;
+    font-size: 13px;
 }
 
 .contact-method a,
 .contact-method p {
     color: var(--primary-blue);
     text-decoration: none;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .contact-method a:hover {
     text-decoration: underline;
 }
 
-/* Contact Form */
-.contact-form-wrapper {
-    background: var(--primary-pink);
-    padding: 30px;
-    border-radius: 12px;
-}
-
-.contact-form-wrapper h3 {
-    text-align: center;
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: var(--dark-text);
-    font-weight: 700;
-}   
-
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.form-group {
-    display: flex;
-    flex-direction: column;
-}
-
-.form-group label {
+/* Email Button in Contact Method */
+.btn-email {
+    display: inline-block;
+    padding: 10px 20px !important;
+    margin: 0 !important;
+    border: none;
+    border-radius: 6px;
+    background: var(--primary-green) !important;
+    color: white !important;
+    text-decoration: none;
     font-weight: 600;
-    margin-bottom: 8px;
-    color: var(--dark-text);
-}
-
-.form-group input,
-.form-group textarea {
-    padding: 12px 15px;
-    border: 1px solid #e5e7eb;
-    border-radius: 8px;
-    font-family: inherit;
-    font-size: 14px;
     transition: all 0.3s ease;
+    text-align: center;
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: var(--primary-blue);
-    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+.btn-email:hover {
+    background: var(--primary-orange) !important;
+    transform: translateY(-2px);
 }
 
 /* Footer */
