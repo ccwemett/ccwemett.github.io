@@ -187,16 +187,83 @@ body {
 
 /* Hero Section */
 .hero {
-    padding: 140px 0 80px;
+    padding: 140px 0 0px;
     margin-top: 80px;
     background: var(--primary-pink)
 }
 
 .hero-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     gap: 60px;
     align-items: center;
+    position: relative;
+}
+
+.hero-text {
+    width: 100%;
+}
+
+/* Hero Image Wrapper with shapes */
+.hero-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Colorful background shapes */
+.shape {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.shape-pink {
+    width: 280px;
+    height: 280px;
+    background: linear-gradient(135deg, #f7c6e8 0%, #f9d4e6 100%);
+    top: -40px;
+    left: -80px;
+    z-index: 1;
+    box-shadow: 0 20px 60px rgba(247, 198, 232, 0.3);
+}
+
+.shape-blue {
+    width: 320px;
+    height: 320px;
+    background: linear-gradient(135deg, #a8d5e8 0%, #b8dff0 100%);
+    bottom: -60px;
+    right: -100px;
+    z-index: 1;
+    box-shadow: 0 20px 60px rgba(168, 213, 232, 0.3);
+}
+
+.shape-orange {
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(135deg, #f4a97c 0%, #f5b48f 100%);
+    top: 80px;
+    right: 20px;
+    z-index: 1;
+    box-shadow: 0 20px 60px rgba(244, 169, 124, 0.3);
+}
+
+/* Hero Image with asymmetrical corner rounding */
+.hero-image {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    max-width: 400px;
+    height: 450px;
+    background: linear-gradient(135deg, #e8f4f8 0%, #f0f8fa 100%);
+    border-radius: 40px 60px 20px 80px;
+    overflow: hidden;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .badge {
@@ -220,12 +287,24 @@ body {
 }
 
 .hero h2 {
-    font-size: clamp(36px, 8vw, 40px);
-    font-weight: 400;
+    font-size: clamp(36px, 8vw, 48px);
+    font-weight: 700;
     margin-bottom: 20px;
-    /* margin-left: -30px; */
     line-height: 1.2;
     color: var(--primary-blue);
+}
+
+.hero h2 mark {
+    background: var(--primary-orange);
+    color: inherit;
+    padding: 0 8px;
+    position: relative;
+    top: 4px;
+    border-radius: 8px;
+    opacity: 0.5;
+    display: inline-block;
+    line-height: 0em;
+    padding-bottom: 0.5em;
 }
 
 .gradient-text {
@@ -238,7 +317,7 @@ body {
 .hero-subtitle {
     font-size: 18px;
     color: var(--med-text);
-    text-align: left;
+    text-align: center;
     margin-bottom: 15px;
     line-height: 1.8;
 }
@@ -311,8 +390,7 @@ body {
 
 .hero-image img {
     width: 100%;
-    height: auto;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    height: 100%;
     object-fit: cover;
     display: block;
 }
@@ -352,7 +430,7 @@ body {
 
 /* About Section */
 .about {
-    padding: 80px 0;
+    padding: 100px 0 20px;
     /* background: var(--primary-purple); */
 }
 
@@ -367,6 +445,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 30px;
+    position: relative;
 }
 
 .about h2 {
@@ -378,12 +457,76 @@ body {
     font-weight: 700;
 }
 
+/* About Image Wrapper with shapes */
+.about-image-wrapper {
+    position: relative;
+    width: 280px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* About section shapes */
+.shape-blue-about {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(135deg, #a8d5e8 0%, #b8dff0 100%);
+    border-radius: 50%;
+    top: -50px;
+    right: -80px;
+    z-index: 1;
+    box-shadow: 0 20px 60px rgba(168, 213, 232, 0.3);
+}
+
+.shape-pink-about {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(135deg, #f7c6e8 0%, #f9d4e6 100%);
+    border-radius: 50%;
+    bottom: -40px;
+    left: -60px;
+    z-index: 1;
+    box-shadow: 0 20px 60px rgba(247, 198, 232, 0.3);
+}
+
+.shape-orange-about {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    background: linear-gradient(135deg, #f4a97c 0%, #f5b48f 100%);
+    border-radius: 50%;
+    top: -40px;
+    left: -70px;
+    z-index: 1;
+    box-shadow: 0 20px 60px rgba(244, 169, 124, 0.3);
+}
+
+.shape-green-about {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    background: linear-gradient(135deg, #b8d4a8 0%, #c8e0b8 100%);
+    border-radius: 50%;
+    bottom: -50px;
+    right: -60px;
+    z-index: 1;
+    box-shadow: 0 20px 60px rgba(184, 212, 168, 0.3);
+}
+
+
+
 .about-image {
     flex-shrink: 0;
     width: 280px;
     height: 400px;
     overflow: hidden;
     transition: transform 0.3s ease;
+    position: relative;
+    z-index: 10;
+    border-radius: 20px;
 }
 
 .about-image:hover {
@@ -402,6 +545,8 @@ body {
     text-align: center;
     background-color: var(--primary-purple);
     padding: 40px 30px;
+    position: relative;
+    z-index: 5;
 }
 
 .about-content p {
@@ -1030,10 +1175,10 @@ body {
 
 /* Testimonials Section */
 .testimonials {
-    padding: 80px 0;
+    padding: 80px 0 60px;
     background: var(--primary-pink);
     position: relative;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .testimonials .container {
@@ -1043,6 +1188,62 @@ body {
 .testimonials-header {
     text-align: center;
     margin-bottom: 60px;
+    position: relative;
+}
+
+.testimonials-header-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+/* Testimonials shapes */
+.shape-pink-test {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(135deg, #f7c6e8 0%, #f9d4e6 100%);
+    border-radius: 50%;
+    top: -60px;
+    left: -80px;
+    z-index: 0;
+    box-shadow: 0 20px 60px rgba(247, 198, 232, 0.3);
+}
+
+.shape-blue-test {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(135deg, #a8d5e8 0%, #b8dff0 100%);
+    border-radius: 50%;
+    bottom: -40px;
+    right: -100px;
+    z-index: 0;
+    box-shadow: 0 20px 60px rgba(168, 213, 232, 0.3);
+}
+
+.shape-orange-test {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    background: linear-gradient(135deg, #f4a97c 0%, #f5b48f 100%);
+    border-radius: 50%;
+    top: 30px;
+    right: -60px;
+    z-index: 0;
+    box-shadow: 0 20px 60px rgba(244, 169, 124, 0.3);
+}
+
+.testimonials-header h2 mark {
+    background: var(--primary-orange);
+    color: inherit;
+    padding: 0 8px;
+    position: relative;
+    top: 4px;
+    border-radius: 8px;
+    opacity: 0.5;
+    display: inline-block;
+    line-height: 0em;
+    padding-bottom: 0.5em;
 }
 
 .testimonials-subtitle {
@@ -1060,12 +1261,23 @@ body {
     margin: 0;
 }
 
+.testimonials h2 mark {
+    background: var(--primary-orange);
+    color: inherit;
+    padding: 0 12px;
+    position: relative;
+    top: 6px;
+    border-radius: 10px;
+    opacity: 0.6;
+    z-index: 1;
+}
+
 .testimonials-grid {
     display: flex;
     gap: 40px;
     overflow-x: auto;
-    overflow-y: hidden;
-    padding: 20px 20px;
+    overflow-y: visible;
+    padding: 20px 20px 80px 20px;
     perspective: 1000px;
     scroll-behavior: smooth;
     width: 100vw;
@@ -1097,46 +1309,51 @@ body {
 
 /* Card Colors */
 .card-black {
-    background: #1a1a1a;
-    color: white;
+    background: var(--primary-brown);
+    color: var(--white);
 }
 
 .card-black .stars {
-    color: #6366f1;
+    color: var(--primary-blue);
 }
 
 .card-blue {
-    background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
-    color: white;
+    background: var(--primary-blue);
+    color: var(--white);
 }
 
 .card-blue .stars {
-    color: #fbbf24;
+    color: var(--primary-yellow);
 }
 
 .card-gray {
-    background: #f3f4f6;
-    color: #1f2937;
+    background: var(--primary-purple);
+    color: var(--white);
 }
 
 .card-gray .stars {
-    color: #000000;
+    color: var(--primary-yellow);
 }
 
 .card-green {
-    background: #c6f032;
+    background: var(--primary-yellow);
     color: #1a1a1a;
 }
 
 .card-green .stars {
-    color: #000000;
+    color: #1a1a1a;
 }
 
-.stars {
-    font-size: 20px;
+.quote-mark {
+    font-size: 48px;
     font-weight: bold;
-    margin-bottom: 15px;
-    letter-spacing: 4px;
+    color: inherit;
+    line-height: 0.4;
+    vertical-align: middle;
+    opacity: 0.4;
+    display: inline-block;
+    transform: skewY(-10deg);
+    margin: 0 3px;
 }
 
 .testimonial-text {
@@ -1174,7 +1391,7 @@ body {
     }
 
     .hero-content {
-        grid-template-columns: 1fr;
+        grid-template-columns: 3fr 1fr;
         gap: 40px;
     }
 
@@ -1186,7 +1403,7 @@ body {
         flex-direction: column;
     }
 
-    .hero-image {
+    .hero-image-wrapper {
         display: none;
     }
 
