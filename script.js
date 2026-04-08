@@ -131,7 +131,6 @@ const photoData = {
         shoots: [
             { id: 1, title: 'Kiya', subtitle: 'Senior Portraits', images: ['images/photography/kiya-senior-portraits/1.jpg', 'images/photography/kiya-senior-portraits/2.jpg', 'images/photography/kiya-senior-portraits/3.jpg', 'images/photography/kiya-senior-portraits/4.jpg'] },
             { id: 2, title: 'Diana', subtitle: 'Senior portraits', images: ['images/photography/diana-senior-portraits/1.jpg', 'images/photography/diana-senior-portraits/2.jpg', 'images/photography/diana-senior-portraits/3.jpg', 'images/photography/diana-senior-portraits/4.jpg'] }
-            // { id: 3, title: 'Candid Moment', subtitle: 'Lifestyle Portrait', images: ['images/photography/john-senior-portraits/1.jpg', 'images/photography/john-senior-portraits/2.jpg', 'images/photography/john-senior-portraits/3.jpg', 'images/photography/john-senior-portraits/4.jpg'] }
         ]
     },
     'Food': {
@@ -145,14 +144,11 @@ const photoData = {
         shoots: [
             { id: 1, title: 'Joshua Tree', subtitle: 'Adventure Photography', images: ['images/photography/joshua-tree/1.jpg', 'images/photography/joshua-tree/2.jpg', 'images/photography/joshua-tree/3.jpg', 'images/photography/joshua-tree/4.jpg', 'images/photography/joshua-tree/5.jpg', 'images/photography/joshua-tree/6.jpg', 'images/photography/joshua-tree/7.jpg'] },
             { id: 2, title: 'Yosemite', subtitle: 'Nature Photogrphy', images: ['images/photography/yosemite/1.jpg', 'images/photography/yosemite/2.jpg', 'images/photography/yosemite/3.jpg'] }
-            // { id: 3, title: 'Nature\'s Beauty', subtitle: 'Landscape Photography', images: ['images/photography/11.jpg', 'images/photography/12.jpg', 'images/photography/9.jpg', 'images/photography/10.jpg'] }
         ]
     },
     'Event': {
         shoots: [
             { id: 1, title: 'Class of 2024 Graduation', subtitle: 'Event Coverage', images: ['images/photography/wshs-2024-graduation/1.jpg', 'images/photography/wshs-2024-graduation/2.jpg', 'images/photography/wshs-2024-graduation/3.jpg', 'images/photography/wshs-2024-graduation/4.jpg', 'images/photography/wshs-2024-graduation/5.jpg', 'images/photography/wshs-2024-graduation/6.jpg'] }
-            // { id: 2, title: 'Crowd Moments', subtitle: 'Documentary Style', images: ['images/photography/14.jpg', 'images/photography/15.jpg', 'images/photography/16.jpg', 'images/photography/13.jpg'] },
-            // { id: 3, title: 'Behind the Scenes', subtitle: 'Candid Coverage', images: ['images/photography/15.jpg', 'images/photography/16.jpg', 'images/photography/13.jpg', 'images/photography/14.jpg'] }
         ]
     }
 };
