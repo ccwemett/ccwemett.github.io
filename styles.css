@@ -1850,23 +1850,22 @@ body {
 }
 
 .skill-card-blue {
-    background: linear-gradient(135deg, #26656e 0%, #3a8895 100%);
-    color: white;
+    background: var(--primary-blue);
+    color: var(--linen);
 }
 
 .skill-card-purple {
-    background: linear-gradient(135deg, #d9bfd9 0%, #c9afc9 100%);
-    color: var(--dark-text);
+    background: var(--primary-purple);
+    color: var(--linen);
 }
-
 .skill-card-orange {
-    background: linear-gradient(135deg, #dd7740 0%, #e8945a 100%);
-    color: white;
+    background: var(--primary-orange);
+    color: var(--linen);
 }
 
 .skill-card-green {
-    background: linear-gradient(135deg, #858033 0%, #a8a044 100%);
-    color: white;
+    background: var(--primary-green);
+    color: var(--linen);
 }
 
 .skill-tags {
