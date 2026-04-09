@@ -11,6 +11,12 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
             <div class="nav-center-group">
                 <ul class="nav-links-left">
                     <li><a href="#home">Home</a></li>
@@ -31,6 +37,17 @@
                 <a href="#contact" class="btn-touch">Get In Touch</a>
             </div>
         </div>
+        
+        <!-- Mobile menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <ul class="mobile-nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact" class="btn-touch">Get In Touch</a></li>
+            </ul>
+        </div>
     </nav>
 
     <!-- Hero Section -->
@@ -38,9 +55,9 @@
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h2><mark>Hey there!</mark></h2>
-                    <h2><mark>Here to figure things out,</h2>
-                    <h2><mark>and help others along the way.</h2>
+                    <h2>Hi, I'm Cloe!</h2>
+                    <h2>Learning something new every day,</h2>
+                    <h2>and sharing what I learn along the way.</h2>
                     <p class="hero-subtitle">I'm a Support Engineer and Code Coach with a background in Computer Science who is passionate about fixing issues, sharing knowledge, and making technology less intimidating.</p>
                     <div class="hero-buttons">
                         <a href="#experience" class="btn btn-primary">What I've Been Up To</a>
@@ -97,10 +114,7 @@
         <div class="container">
             <div class="testimonials-header">
                 <div class="testimonials-header-wrapper">
-                    <div class="shape shape-pink-test"></div>
-                    <div class="shape shape-blue-test"></div>
-                    <div class="shape shape-orange-test"></div>
-                    <h2><mark>Trusted by people</mark></h2>
+                    <h2>Trusted by people</h2>
                 </div>
             </div>
             <div class="testimonials-grid">
@@ -247,7 +261,7 @@
             <!-- Education Column (Left) -->
             <div class="education-column">
                 <div class="education-content">
-                    <h2><mark>Education</mark></h2>
+                    <h2>Education</h2>
                 </div>
                 <div class="education-items">
                     <div class="education-item">
@@ -404,12 +418,7 @@
     <section id="portfolio" class="portfolio">
         <div id="photography-portfolio" class="container">
             <div class="portfolio-header">
-                <div class="shapes-container">
-                    <div class="shape shape-orange-port"></div>
-                    <div class="shape shape-blue-port"></div>
-                    <div class="shape shape-pink-port"></div>
-                </div>
-                <h2><mark>My Portfolio</mark></h2>
+                <h2>My Portfolio</h2>
                 <p class="section-subtitle">A showcase of my technical projects and contributions</p>
             </div>
 
@@ -453,52 +462,81 @@
         </div>
     </section>
 
+    <div class="divider contact-wave"></div>
+
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2>Let's Connect</h2>
+            <div class="contact-header">
+                <h2>Let's Connect</h2>
+                <p class="contact-subtitle">I'm always excited to discuss new opportunities and collaborate on interesting projects!</p>
+            </div>
             
             <div class="contact-content">
-                <div class="contact-info">
-                    <p>I'm always excited to discuss new opportunities and collaborate on interesting projects!</p>
-                    <div class="contact-methods">
-                        <div class="contact-method">
-                            <span class="method-icon">💼</span>
-                            <div>
-                                <strong>LinkedIn</strong>
-                                <a href="https://linkedin.com/in/cloe-wemett" target="_blank">linkedin.com/in/cloe-wemett</a>
-                            </div>
-                        </div>
-                        <div class="contact-method">
-                            <span class="method-icon">💾</span>
-                            <div>
-                                <strong>GitHub</strong>
-                                <a href="https://github.com/ccwemett" target="_blank">github.com/ccwemett</a>
-                            </div>
-                        </div>
-                        <div class="contact-method">
-                            <span class="method-icon">📧</span>
-                            <div>
-                                <strong>Email</strong>
-                                <a href="mailto:cloe.wemett@gmail.com?subject=Let's%20Connect!&body=Hi%20Cloe,%0A%0AI%27d%20love%20to%20connect%20with%20you." class="btn btn-primary btn-email">Send Me an Email</a>
-                            </div>
-                        </div>
-                        <div class="contact-method">
+                <div class="contact-grid">
+                    <div class="contact-method">
+                        <div class="method-icon-wrapper">
                             <span class="method-icon">📍</span>
-                            <div>
-                                <strong>Location</strong>
-                                <p>San Diego, CA</p>
-                            </div>
+                        </div>
+                        <div class="method-content">
+                            <h3>Based In</h3>
+                            <p>San Diego, CA</p>
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <div class="method-icon-wrapper">
+                            <span class="method-icon">📄</span>
+                        </div>
+                        <div class="method-content">
+                            <h3>Resume</h3>
+                            <a href="CloeWemettResume2025.pdf" target="_blank" class="contact-link">Download Resume</a>
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <div class="method-icon-wrapper">
+                            <span class="method-icon">💼</span>
+                        </div>
+                        <div class="method-content">
+                            <h3>LinkedIn</h3>
+                            <a href="https://linkedin.com/in/cloe-wemett" target="_blank" class="contact-link">linkedin.com/in/cloe-wemett</a>
+                        </div>
+                    </div>
+                    <div class="contact-method">
+                        <div class="method-icon-wrapper">
+                            <span class="method-icon">💾</span>
+                        </div>
+                        <div class="method-content">
+                            <h3>GitHub</h3>
+                            <a href="https://github.com/ccwemett" target="_blank" class="contact-link">github.com/ccwemett</a>
                         </div>
                     </div>
                 </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container"></div>
     </footer>
 
     <script src="script.js"></script>

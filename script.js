@@ -1,3 +1,22 @@
+// Mobile hamburger menu toggle
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobileMenu');
+
+if (hamburger) {
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+    });
+}
+
+// Close mobile menu when clicking on a link
+document.querySelectorAll('.mobile-nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        mobileMenu.classList.remove('active');
+    });
+});
+
 // Shrink navbar on scroll
 const navbar = document.querySelector('.navbar');
 
@@ -30,23 +49,16 @@ if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
         e.preventDefault();
         
-        const formData = {
-            name: document.getElementById('name').value,
-            email: document.getElementById('email').value,
-            subject: document.getElementById('subject').value,
-            message: document.getElementById('message').value
-        };
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const subject = document.getElementById('subject').value;
+        const message = document.getElementById('message').value;
 
-        // Log form data (in a real app, this would send to a backend)
-        console.log('Form submitted:', formData);
-
-        // Create mailto link
-        const mailtoLink = `mailto:ccwemett@gmail.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(`From: ${formData.name} (${formData.email})\n\n${formData.message}`)}`;
+        // Create pre-filled email template
+        const emailBody = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
+        const mailtoLink = `mailto:cloe@ccwemett.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
         
-        // Show success message
-        alert('Thank you for your message! Opening email client...');
-        
-        // Open email client
+        // Open email client with pre-filled details
         window.location.href = mailtoLink;
         
         // Reset form
