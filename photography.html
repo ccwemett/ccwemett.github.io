@@ -22,12 +22,20 @@
         }
 
         .photo-hero {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) minmax(280px, 380px);
+            align-items: center;
+            gap: 32px;
             margin-bottom: 48px;
             padding: 40px;
             border: 2px solid var(--ocean-deep);
             border-radius: 36px;
             background: rgba(255, 255, 255, 0.68);
             box-shadow: 14px 14px 0 rgba(21, 107, 191, 0.12);
+        }
+
+        .photo-hero-copy {
+            min-width: 0;
         }
 
         .photo-kicker {
@@ -41,7 +49,7 @@
 
         .photo-hero h1 {
             margin-bottom: 14px;
-            font-size: clamp(2.6rem, 6vw, 4.7rem);
+            font-size: clamp(2.6rem, 6vw, 4rem);
             line-height: 0.95;
             color: var(--ocean-deep);
         }
@@ -49,6 +57,24 @@
         .photo-intro {
             max-width: 680px;
             font-size: 1.08rem;
+        }
+
+        .photo-hero-image {
+            width: 100%;
+            margin: 0;
+            aspect-ratio: 4 / 5;
+            overflow: hidden;
+            border: 2px solid var(--ocean-deep);
+            border-radius: 28px;
+            background: #f4e9e1;
+            box-shadow: 10px 10px 0 rgba(21, 107, 191, 0.12);
+        }
+
+        .photo-hero-image img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         .wip-note {
@@ -294,9 +320,18 @@
                 padding-top: 120px;
             }
 
+            .photo-hero {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+
             .photo-hero,
             .gallery-section {
                 padding: 24px;
+            }
+
+            .photo-hero-image {
+                max-width: 360px;
             }
 
             .gallery-grid a {
@@ -354,16 +389,21 @@
     <main class="photo-page">
         <div class="photo-shell">
             <section class="photo-hero">
-                <p class="photo-kicker">Photography</p>
-                <h1>Collected Moments<br> Through My Lens</h1>
-                <p class="photo-intro">This page is still a work in progress, but here are some pictures for the meantime. I wanted to get the gallery up now and keep refining the presentation as I add more. The full collection is grouped by shoot for now.</p>
-                <p class="wip-note">Work in progress</p>
-                <!-- <div class="photo-nav">
-                    <a href="#featured">Featured</a>
-                    <a href="#portraits">Portraits</a>
-                    <a href="#landscapes">Landscapes</a>
-                    <a href="#events">Events</a>
-                </div> -->
+                <div class="photo-hero-copy">
+                    <p class="photo-kicker">Photography</p>
+                    <h1>Collected Moments<br> Through My Lens</h1>
+                    <p class="photo-intro">This page is still a work in progress, but here are some pictures for the meantime. I wanted to get the gallery up now and keep refining the presentation as I add more. The full collection is grouped by shoot for now.</p>
+                    <p class="wip-note">Work in progress</p>
+                    <!-- <div class="photo-nav">
+                        <a href="#featured">Featured</a>
+                        <a href="#portraits">Portraits</a>
+                        <a href="#landscapes">Landscapes</a>
+                        <a href="#events">Events</a>
+                    </div> -->
+                </div>
+                <figure class="photo-hero-image">
+                    <img src="images/headshot3.JPG" alt="Cloe">
+                </figure>
             </section>
 
             <!-- <section id="gallery" class="gallery-section">
@@ -381,68 +421,68 @@
             <section id="world-of-coffee-2026" class="gallery-section">
                 <h2>World of Coffee 2026</h2>
                 <div class="gallery-grid">
-                    <a href="photography/World-of-Coffee-2026/DSC00005.jpg" class="lightbox-trigger"><img src="photography/World-of-Coffee-2026/DSC00005.jpg" alt="World of Coffee 2026 photo 1"></a>
-                    <a href="photography/World-of-Coffee-2026/DSC09980.jpg" class="lightbox-trigger"><img src="photography/World-of-Coffee-2026/DSC09980.jpg" alt="World of Coffee 2026 photo 2"></a>
-                    <a href="photography/World-of-Coffee-2026/DSC09983.jpg" class="lightbox-trigger"><img src="photography/World-of-Coffee-2026/DSC09983.jpg" alt="World of Coffee 2026 photo 3"></a>
-                    <a href="photography/World-of-Coffee-2026/DSC09988.jpg" class="lightbox-trigger"><img src="photography/World-of-Coffee-2026/DSC09988.jpg" alt="World of Coffee 2026 photo 4"></a>
-                    <a href="photography/World-of-Coffee-2026/DSC09991.jpg" class="lightbox-trigger"><img src="photography/World-of-Coffee-2026/DSC09991.jpg" alt="World of Coffee 2026 photo 5"></a>
-                    <a href="photography/World-of-Coffee-2026/DSC09993.jpg" class="lightbox-trigger"><img src="photography/World-of-Coffee-2026/DSC09993.jpg" alt="World of Coffee 2026 photo 6"></a>
-                    <a href="photography/World-of-Coffee-2026/DSC09995.jpg" class="lightbox-trigger"><img src="photography/World-of-Coffee-2026/DSC09995.jpg" alt="World of Coffee 2026 photo 7"></a>
-                    <a href="photography/World-of-Coffee-2026/IMG_5868.jpeg" class="lightbox-trigger"><img src="photography/World-of-Coffee-2026/IMG_5868.jpeg" alt="World of Coffee 2026 photo 8"></a>
+                    <a href="images/photographyPortfolio/World-of-Coffee-2026/1.jpg" class="lightbox-trigger"><img src="images/photographyPortfolio/World-of-Coffee-2026/1.jpg" alt="World of Coffee 2026 photo 1"></a>
+                    <a href="images/photographyPortfolio/World-of-Coffee-2026/2.jpg" class="lightbox-trigger"><img src="images/photographyPortfolio/World-of-Coffee-2026/2.jpg" alt="World of Coffee 2026 photo 2"></a>
+                    <a href="images/photographyPortfolio/World-of-Coffee-2026/3.jpg" class="lightbox-trigger"><img src="images/photographyPortfolio/World-of-Coffee-2026/3.jpg" alt="World of Coffee 2026 photo 3"></a>
+                    <a href="images/photographyPortfolio/World-of-Coffee-2026/4.jpg" class="lightbox-trigger"><img src="images/photographyPortfolio/World-of-Coffee-2026/4.jpg" alt="World of Coffee 2026 photo 4"></a>
+                    <a href="images/photographyPortfolio/World-of-Coffee-2026/5.jpg" class="lightbox-trigger"><img src="images/photographyPortfolio/World-of-Coffee-2026/5.jpg" alt="World of Coffee 2026 photo 5"></a>
+                    <a href="images/photographyPortfolio/World-of-Coffee-2026/6.jpg" class="lightbox-trigger"><img src="images/photographyPortfolio/World-of-Coffee-2026/6.jpg" alt="World of Coffee 2026 photo 6"></a>
+                    <a href="images/photographyPortfolio/World-of-Coffee-2026/7.jpg" class="lightbox-trigger"><img src="images/photographyPortfolio/World-of-Coffee-2026/7.jpg" alt="World of Coffee 2026 photo 7"></a>
+                    <a href="images/photographyPortfolio/World-of-Coffee-2026/8.jpg" class="lightbox-trigger"><img src="images/photographyPortfolio/World-of-Coffee-2026/8.jpg" alt="World of Coffee 2026 photo 8"></a>
                 </div>
             </section>
 
             <section id="joshua-tree" class="gallery-section">
                 <h2>Joshua Tree 2025</h2>
                 <div class="gallery-grid">
-                    <a href="photography/joshua-tree/1.jpg" class="lightbox-trigger"><img src="photography/joshua-tree/1.jpg" alt="Joshua Tree landscape 1"></a>
-                    <a href="photography/joshua-tree/2.jpg" class="lightbox-trigger"><img src="photography/joshua-tree/2.jpg" alt="Joshua Tree landscape 2"></a>
-                    <a href="photography/joshua-tree/3.jpg" class="lightbox-trigger"><img src="photography/joshua-tree/3.jpg" alt="Joshua Tree landscape 3"></a>
-                    <a href="photography/joshua-tree/4.jpg" class="lightbox-trigger"><img src="photography/joshua-tree/4.jpg" alt="Joshua Tree landscape 4"></a>
-                    <a href="photography/joshua-tree/5.jpg" class="lightbox-trigger"><img src="photography/joshua-tree/5.jpg" alt="Joshua Tree landscape 5"></a>
-                    <a href="photography/joshua-tree/6.jpg" class="lightbox-trigger"><img src="photography/joshua-tree/6.jpg" alt="Joshua Tree landscape 6"></a>
-                    <a href="photography/joshua-tree/7.jpg" class="lightbox-trigger"><img src="photography/joshua-tree/7.jpg" alt="Joshua Tree landscape 7"></a>
+                    <a href="images/photographyPortfolio/joshua-tree/1.jpg" class="lightbox-trigger"><img src="images/photographyPortfolio/joshua-tree/1.jpg" alt="Joshua Tree landscape 1"></a>
+                    <a href="images/photographyPortfolio/joshua-tree/2.jpg" class="lightbox-trigger"><img src="images/photographyPortfolio/joshua-tree/2.jpg" alt="Joshua Tree landscape 2"></a>
+                    <a href="images/photographyPortfolio/joshua-tree/3.jpg" class="lightbox-trigger"><img src="images/photographyPortfolio/joshua-tree/3.jpg" alt="Joshua Tree landscape 3"></a>
+                    <a href="images/photographyPortfolio/joshua-tree/4.jpg" class="lightbox-trigger"><img src="images/photographyPortfolio/joshua-tree/4.jpg" alt="Joshua Tree landscape 4"></a>
+                    <a href="images/photographyPortfolio/joshua-tree/5.jpg" class="lightbox-trigger"><img src="images/photographyPortfolio/joshua-tree/5.jpg" alt="Joshua Tree landscape 5"></a>
+                    <a href="images/photographyPortfolio/joshua-tree/6.jpg" class="lightbox-trigger"><img src="images/photographyPortfolio/joshua-tree/6.jpg" alt="Joshua Tree landscape 6"></a>
+                    <a href="images/photographyPortfolio/joshua-tree/7.jpg" class="lightbox-trigger"><img src="images/photographyPortfolio/joshua-tree/7.jpg" alt="Joshua Tree landscape 7"></a>
                 </div>
             </section>
 
             <section id="graduation" class="gallery-section">
                 <h2>WSHS Graduation 2024</h2>
                 <div class="gallery-grid">
-                    <a href="photography/wshs-2024-graduation/1.jpeg" class="lightbox-trigger"><img src="photography/wshs-2024-graduation/1.jpeg" alt="WSHS graduation photo 1"></a>
-                    <a href="photography/wshs-2024-graduation/2.JPG" class="lightbox-trigger"><img src="photography/wshs-2024-graduation/2.JPG" alt="WSHS graduation photo 2"></a>
-                    <a href="photography/wshs-2024-graduation/3.jpeg" class="lightbox-trigger"><img src="photography/wshs-2024-graduation/3.jpeg" alt="WSHS graduation photo 3"></a>
-                    <a href="photography/wshs-2024-graduation/4.jpeg" class="lightbox-trigger"><img src="photography/wshs-2024-graduation/4.jpeg" alt="WSHS graduation photo 4"></a>
-                    <a href="photography/wshs-2024-graduation/5.jpeg" class="lightbox-trigger"><img src="photography/wshs-2024-graduation/5.jpeg" alt="WSHS graduation photo 5"></a>
-                    <a href="photography/wshs-2024-graduation/6.jpeg" class="lightbox-trigger"><img src="photography/wshs-2024-graduation/6.jpeg" alt="WSHS graduation photo 6"></a>
+                    <a href="images/photographyPortfolio/wshs-2024-graduation/1.jpeg" class="lightbox-trigger"><img src="images/photographyPortfolio/wshs-2024-graduation/1.jpeg" alt="WSHS graduation photo 1"></a>
+                    <a href="images/photographyPortfolio/wshs-2024-graduation/2.JPG" class="lightbox-trigger"><img src="images/photographyPortfolio/wshs-2024-graduation/2.JPG" alt="WSHS graduation photo 2"></a>
+                    <a href="images/photographyPortfolio/wshs-2024-graduation/3.jpeg" class="lightbox-trigger"><img src="images/photographyPortfolio/wshs-2024-graduation/3.jpeg" alt="WSHS graduation photo 3"></a>
+                    <a href="images/photographyPortfolio/wshs-2024-graduation/4.jpeg" class="lightbox-trigger"><img src="images/photographyPortfolio/wshs-2024-graduation/4.jpeg" alt="WSHS graduation photo 4"></a>
+                    <a href="images/photographyPortfolio/wshs-2024-graduation/5.jpeg" class="lightbox-trigger"><img src="images/photographyPortfolio/wshs-2024-graduation/5.jpeg" alt="WSHS graduation photo 5"></a>
+                    <a href="images/photographyPortfolio/wshs-2024-graduation/6.jpeg" class="lightbox-trigger"><img src="images/photographyPortfolio/wshs-2024-graduation/6.jpeg" alt="WSHS graduation photo 6"></a>
                 </div>
             </section>
 
             <section id="kiya" class="gallery-section">
                 <h2>Kiya's Senior Portraits 2024</h2>
                 <div class="gallery-grid">
-                    <a href="photography/kiya-senior-portraits/1.jpg" class="lightbox-trigger"><img src="photography/kiya-senior-portraits/1.jpg" alt="Kiya senior portrait 1"></a>
-                    <a href="photography/kiya-senior-portraits/3.jpg" class="lightbox-trigger"><img src="photography/kiya-senior-portraits/3.jpg" alt="Kiya senior portrait 3"></a>
-                    <a href="photography/kiya-senior-portraits/4.jpg" class="lightbox-trigger"><img src="photography/kiya-senior-portraits/4.jpg" alt="Kiya senior portrait 4"></a>
-                    <a href="photography/kiya-senior-portraits/2.jpg" class="lightbox-trigger"><img src="photography/kiya-senior-portraits/2.jpg" alt="Kiya senior portrait 2"></a>
+                    <a href="images/photographyPortfolio/kiya-senior-portraits/1.jpg" class="lightbox-trigger"><img src="images/photographyPortfolio/kiya-senior-portraits/1.jpg" alt="Kiya senior portrait 1"></a>
+                    <a href="images/photographyPortfolio/kiya-senior-portraits/3.jpg" class="lightbox-trigger"><img src="images/photographyPortfolio/kiya-senior-portraits/3.jpg" alt="Kiya senior portrait 3"></a>
+                    <a href="images/photographyPortfolio/kiya-senior-portraits/4.jpg" class="lightbox-trigger"><img src="images/photographyPortfolio/kiya-senior-portraits/4.jpg" alt="Kiya senior portrait 4"></a>
+                    <a href="images/photographyPortfolio/kiya-senior-portraits/2.jpg" class="lightbox-trigger"><img src="images/photographyPortfolio/kiya-senior-portraits/2.jpg" alt="Kiya senior portrait 2"></a>
                 </div>
             </section>
 
             <section id="diana" class="gallery-section">
                 <h2>Diana's Senior Portraits 2024</h2>
                 <div class="gallery-grid">
-                    <a href="photography/diana-senior-portraits/1.jpg" class="lightbox-trigger"><img src="photography/diana-senior-portraits/1.jpg" alt="Diana senior portrait 1"></a>
-                    <a href="photography/diana-senior-portraits/2.jpg" class="lightbox-trigger"><img src="photography/diana-senior-portraits/2.jpg" alt="Diana senior portrait 2"></a>
-                    <a href="photography/diana-senior-portraits/3.jpg" class="lightbox-trigger"><img src="photography/diana-senior-portraits/3.jpg" alt="Diana senior portrait 3"></a>
-                    <a href="photography/diana-senior-portraits/4.jpg" class="lightbox-trigger"><img src="photography/diana-senior-portraits/4.jpg" alt="Diana senior portrait 4"></a>
+                    <a href="images/photographyPortfolio/diana-senior-portraits/1.jpg" class="lightbox-trigger"><img src="images/photographyPortfolio/diana-senior-portraits/1.jpg" alt="Diana senior portrait 1"></a>
+                    <a href="images/photographyPortfolio/diana-senior-portraits/2.jpg" class="lightbox-trigger"><img src="images/photographyPortfolio/diana-senior-portraits/2.jpg" alt="Diana senior portrait 2"></a>
+                    <a href="images/photographyPortfolio/diana-senior-portraits/3.jpg" class="lightbox-trigger"><img src="images/photographyPortfolio/diana-senior-portraits/3.jpg" alt="Diana senior portrait 3"></a>
+                    <a href="images/photographyPortfolio/diana-senior-portraits/4.jpg" class="lightbox-trigger"><img src="images/photographyPortfolio/diana-senior-portraits/4.jpg" alt="Diana senior portrait 4"></a>
                 </div>
             </section>
 
             <section id="yosemite" class="gallery-section">
                 <h2>Yosemite 2023</h2>
                 <div class="gallery-grid">
-                    <a href="photography/yosemite/1.jpg" class="lightbox-trigger"><img src="photography/yosemite/1.jpg" alt="Yosemite landscape 1"></a>
-                    <a href="photography/yosemite/2.jpg" class="lightbox-trigger"><img src="photography/yosemite/2.jpg" alt="Yosemite landscape 2"></a>
-                    <a href="photography/yosemite/3.jpg" class="lightbox-trigger"><img src="photography/yosemite/3.jpg" alt="Yosemite landscape 3"></a>
+                    <a href="images/photographyPortfolio/yosemite/1.jpg" class="lightbox-trigger"><img src="images/photographyPortfolio/yosemite/1.jpg" alt="Yosemite landscape 1"></a>
+                    <a href="images/photographyPortfolio/yosemite/2.jpg" class="lightbox-trigger"><img src="images/photographyPortfolio/yosemite/2.jpg" alt="Yosemite landscape 2"></a>
+                    <a href="images/photographyPortfolio/yosemite/3.jpg" class="lightbox-trigger"><img src="images/photographyPortfolio/yosemite/3.jpg" alt="Yosemite landscape 3"></a>
                 </div>
             </section>
 

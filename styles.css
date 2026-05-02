@@ -3,7 +3,7 @@
     --forest-green: #4c9622ff;
     --cool-sky: #65b7f6ff;
     --atomic-tangerine: #f68342ff;
-    --royal-gold: #f5db55ff;
+    --royal-gold: rgb(245, 219, 85);
     --bright-lavender: #b596eaff;
     --ocean-deep: #156bbfff;
     --rose-kiss: #f475a7ff;
@@ -2409,7 +2409,7 @@ body {
     align-items: center;
     padding: 8px 14px;
     border-radius: 999px;
-    background: rgba(21, 107, 191, 0.08);
+    background: rgba(244, 117, 167, 0.14);
     color: var(--primary-blue);
     font-size: 13px;
     font-weight: 700;
@@ -2498,7 +2498,7 @@ body {
     align-items: center;
     padding: 8px 14px;
     border-radius: 999px;
-    background: rgba(21, 107, 191, 0.08);
+    background: rgba(244, 117, 167, 0.14);
     color: var(--primary-blue);
     font-size: 13px;
     font-weight: 700;
