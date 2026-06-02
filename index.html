@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<!--Borders created with https://app.haikei.app/-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cloe Wemett - Portfolio</title>
+    <title>Cloe Wemett</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
@@ -16,30 +16,26 @@
                 <span></span>
                 <span></span>
             </div>
-
-            <a href="#home" class="nav-brand" aria-label="Cloe Wemett home">
+            <a href="index.html" class="nav-brand" aria-label="Cloe Wemett home">
                 <span class="logo-first">Cloe</span>
                 <span class="logo-last">Wemett</span>
             </a>
-
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="photography.html">Photography</a></li>
             </ul>
-
             <div class="nav-contact-button">
-                <a href="#contact" class="btn-touch">Get In Touch</a>
+                <a href="services.html#contact" class="btn-touch">Get In Touch</a>
             </div>
         </div>
-        
-        <!-- Mobile menu -->
         <div class="mobile-menu" id="mobileMenu">
             <ul class="mobile-nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="photography.html">Photography</a></li>
+                <li><a href="services.html#contact" class="btn-touch" style="display:inline-block;margin-top:8px;">Get In Touch</a></li>
             </ul>
         </div>
     </nav>
@@ -50,16 +46,17 @@
             <div class="hero-content">
                 <div class="hero-text">
                     <p class="hero-eyebrow">Hi, I'm Cloe!</p>
-                    <h1>Turning <span class="highlight">complex</span> problems into <span class="highlight">confident</span> solutions.</h1>
-                    <p class="hero-subtitle">I'm a Support Engineer and Code Coach with a Computer Science background, focused on untangling complex issues, explaining things clearly, and making technology feel more approachable.</p>
-                    <div class="hero-highlights" aria-label="Quick highlights">
-                        <span>Brand Management</span>
-                        <span>Customer Support</span>
-                        <span>Web Design</span>
-                        <span>Code Coaching</span>
+                    <h1>Let's <span class="highlight">learn</span>, <span class="highlight">create</span>, and <span class="highlight">grow</span> together.</h1>
+                    <p class="hero-subtitle">I offer personalized tutoring in math and programming, photography for portraits and brands, and consulting to help small businesses work smarter with technology.</p>
+                    <div class="hero-highlights" aria-label="Services">
+                        <!-- <span>📚 Tutoring</span>
+                        <span>📷 Photography</span>
+                        <span>💡 Consulting</span> -->
+                        <span>📍 San Diego, CA</span>
                     </div>
                     <div class="hero-buttons">
-                        <a href="#experience" class="btn btn-primary">See What I've Been Up To</a>
+                        <a href="services.html" class="btn btn-primary">See My Services</a>
+                        <a href="about.html" class="btn btn-secondary">About Me</a>
                     </div>
                 </div>
 
@@ -71,7 +68,6 @@
                     <div class="puzzle-piece hero-piece hero-piece-5" aria-hidden="true"></div>
                     <div class="puzzle-piece hero-piece hero-piece-6" aria-hidden="true"></div>
                     <div class="puzzle-piece hero-piece hero-piece-7" aria-hidden="true"></div>
-                    
                     <div class="hero-image">
                         <img src="images/headshot.jpeg" alt="Cloe Wemett">
                     </div>
@@ -80,10 +76,63 @@
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+    <!-- Services Teaser Section -->
+    <section class="services-teaser">
         <div class="container">
-            <div class="about-wrapper">
+            <div class="services-teaser-header">
+                <p class="services-teaser-eyebrow">What I Do</p>
+                <h2>How I Can Help</h2>
+                <p class="services-teaser-subtitle">Three areas where I put my skills to work for you.</p>
+            </div>
+            <div class="services-teaser-grid">
+
+                <a href="services.html#tutoring" class="service-card">
+                    <div class="service-card-accent" style="background: var(--primary-blue);"></div>
+                    <div class="service-card-icon">📚</div>
+                    <h3>Math &amp; Programming Tutoring</h3>
+                    <p>From elementary math to college-level CS. Patient, personalized sessions that build real confidence and lasting skills.</p>
+                    <div class="service-card-tags">
+                        <span>All Ages</span>
+                        <span>All Levels</span>
+                        <span>1-on-1 Sessions</span>
+                    </div>
+                    <span class="service-card-cta">Learn more →</span>
+                </a>
+
+                <a href="services.html#photography" class="service-card">
+                    <div class="service-card-accent" style="background: var(--rose-kiss);"></div>
+                    <div class="service-card-icon">📷</div>
+                    <h3>Photography</h3>
+                    <p>Good photos do more than look nice. Whether it's portraits, brand content, or event coverage, I collaborate closely with every client to understand your vision and bring it to life.</p>
+                    <div class="service-card-tags">
+                        <span>Portraits</span>
+                        <span>Brand Shoots</span>
+                        <span>Events</span>
+                    </div>
+                    <span class="service-card-cta">Learn more →</span>
+                </a>
+
+                <a href="services.html#consulting" class="service-card">
+                    <div class="service-card-accent" style="background: var(--forest-green);"></div>
+                    <div class="service-card-icon">💡</div>
+                    <h3>Small Business Consulting</h3>
+                    <p>Tech setup, POS systems, workflow automation, and AI solutions. Spend less time on busywork and more on what you love.</p>
+                    <div class="service-card-tags">
+                        <span>Tech Setup</span>
+                        <span>AI Solutions</span>
+                        <span>Workflow Automation</span>
+                    </div>
+                    <span class="service-card-cta">Learn more →</span>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Teaser -->
+    <section class="about-teaser">
+        <div class="container">
+            <div class="about-teaser-wrapper">
                 <div class="about-image-wrapper about-image-left">
                     <div class="puzzle-piece about-piece about-left-piece-1" aria-hidden="true"></div>
                     <div class="puzzle-piece about-piece about-left-piece-2" aria-hidden="true"></div>
@@ -91,32 +140,21 @@
                     <div class="puzzle-piece about-piece about-left-piece-4" aria-hidden="true"></div>
                     <div class="puzzle-piece about-piece about-left-piece-5" aria-hidden="true"></div>
                     <div class="about-image about-image-left">
-                        <img src="images/graduation.jpeg" alt="Graduation">
+                        <img src="images/graduation.jpeg" alt="Cloe at graduation">
                     </div>
                 </div>
-                <div class="about-content">
-                    <p>From smoke-filled kitchens to cloud-based systems, I thrive in fast-paced environments where complex problems meet creative solutions. With a background that spans restaurant leadership, technical support, software engineering, and mentoring aspiring coders, I bring a unique blend of hands-on grit, technical expertise, and a passion for continuous learning.</p>
-                    
-                    <p>I'm driven by a love for problem-solving and cracking tough technical challenges while also helping teams grow through curiosity and collaboration. Armed with a Computer Science degree and STEM Education minor from UC Berkeley, I'm excited to connect, create, and contribute to projects and teams that value innovation and growth as much as I do.</p>
-                    
-                    <p>Thanks for stopping by! If you're inspired or just want to chat, let's connect. I'm always eager to collaborate and tackle new challenges!</p>
+                <div class="about-teaser-content">
+                    <p class="about-teaser-eyebrow">A Little About Me</p>
+                    <h2>From kitchens to code and everywhere in between.</h2>
+                    <p>I'm a UC Berkeley Computer Science grad with a background that spans restaurant leadership, technical support at Atlassian, coding mentorship, and photography. I bring hands-on grit and genuine curiosity to everything I take on.</p>
+                    <p>Whether I'm tutoring a student through their first Python script, capturing someone's senior portraits, or helping a small business owner finally feel in control of their tech, I'm in my element when I'm helping people grow.</p>
+                    <a href="about.html" class="btn btn-primary" style="margin-top:12px;">My Full Story</a>
                 </div>
-                <!-- <div class="about-image-wrapper about-image-right">
-                    <div class="puzzle-piece about-piece about-right-piece-1" aria-hidden="true"></div>
-                    <div class="puzzle-piece about-piece about-right-piece-2" aria-hidden="true"></div>
-                    <div class="puzzle-piece about-piece about-right-piece-3" aria-hidden="true"></div>
-                    <div class="puzzle-piece about-piece about-right-piece-4" aria-hidden="true"></div>
-                    <div class="puzzle-piece about-piece about-right-piece-5" aria-hidden="true"></div>
-                    <div class="about-image about-image-right">
-                        <img src="images/headshot2.jpeg" alt="Headshot">
-                    </div>
-                </div> -->
             </div>
-
         </div>
     </section>
 
-    <!-- Testimonials Section - New Design -->
+    <!-- Testimonials -->
     <section class="testimonials">
         <div class="container">
             <div class="testimonials-header">
@@ -125,508 +163,50 @@
             </div>
             <div class="testimonials-grid">
                 <div class="testimonial-card card-purple" style="--rotation: -3deg;">
-                    <p class="testimonial-text"><span class="quote-mark">"</span>There's truly nothing like having an instructor who I can implicitly trust to always conscientiously hold their students to high standards and who has taken the time to build such strong connections with them week after week, month after month, and in some cases, year after year! You've come through for us in countless ways, stepping in to sub at the last minute, being accommodating with your students' changing schedules, and finding ways to engage with students who may not always be easy. Thank you for being such an exemplary employee. Your outstanding character and integrity mean so much to us.<span class="quote-mark">"</span></p>
-                    <p class="testimonial-author">Owner - The Coder School</p>
+                    <p class="testimonial-text"><span class="quote-mark">"</span>There's truly nothing like having an instructor who I can implicitly trust to always conscientiously hold their students to high standards... You've come through for us in countless ways. Your outstanding character and integrity mean so much to us.<span class="quote-mark">"</span></p>
+                    <p class="testimonial-author">Owner, The Coder School</p>
                 </div>
-
-                <!-- Card 1 - Black -->
                 <div class="testimonial-card card-blue" style="--rotation: -8deg;">
-                    <p class="testimonial-text"><span class="quote-mark">"</span>Cloe is an exceptional professional and an amazing team player. I had the pleasure to work with Cloe on Atlassian's Support team for two years. She demonstrates great technical/communication skills and adapts easily to new content.<span class="quote-mark">"</span></p>
-                    <p class="testimonial-author">Past Teammate - Atlassian</p>
-                </div>
-
-                <!-- Card 2 - Blue/Purple -->
-                <div class="testimonial-card card-pink" style="--rotation: 5deg;">
-                    <p class="testimonial-text"><span class="quote-mark">"</span>Cloe is extremely committed and highly competent in her work, consistently proving that speed and quality can go hand in hand. Her well-developed soft skills, combined with a friendly and collaborative attitude, helped create a positive and supportive work environment. Any team would be lucky to have her!<span class="quote-mark">"</span></p>
-                    <p class="testimonial-author">Past Teammate - Atlassian</p>
-                </div>
-
-                <!-- Card 3 - Light Gray -->
-                <div class="testimonial-card card-green" style="--rotation: -3deg;">
-                    <p class="testimonial-text"><span class="quote-mark">"</span>Cloe is a highly skilled Technical Support Engineer who combines strong technical expertise with excellent communication. She played a key role in our hybrid support program, handling both ticket-based and real-time chat support, assisting customers efficiently and professionally across both channels. Beyond her technical strengths, we were also part of the Fun Crew together, where she actively contributed to organizing team events, and boosting team morale. Her collaborative spirit and creativity truly made a positive impact on our team culture. I would be glad to work with her again.<span class="quote-mark">"</span></p>
-                    <p class="testimonial-author">Past Teammate - Atlassian</p>
-                </div>
-
-                <div class="testimonial-card card-orange" style="--rotation: 5deg;">
                     <p class="testimonial-text"><span class="quote-mark">"</span>Whoever hires Cloe will be lucky to pick her up. She's an incredible person, picks things up quickly, is super positive, and excels at any task given to her.<span class="quote-mark">"</span></p>
-                    <p class="testimonial-author">Past Teammate - Atlassian</p>
+                    <p class="testimonial-author">Past Teammate, Atlassian</p>
                 </div>
-
-                <div class="testimonial-card card-dark" style="--rotation: -8deg;">
+                <div class="testimonial-card card-pink" style="--rotation: 5deg;">
+                    <p class="testimonial-text"><span class="quote-mark">"</span>Cloe is extremely committed and highly competent in her work, consistently proving that speed and quality can go hand in hand. Any team would be lucky to have her!<span class="quote-mark">"</span></p>
+                    <p class="testimonial-author">Past Teammate, Atlassian</p>
+                </div>
+                <div class="testimonial-card card-green" style="--rotation: -3deg;">
+                    <p class="testimonial-text"><span class="quote-mark">"</span>Cloe is a highly skilled Technical Support Engineer who combines strong technical expertise with excellent communication. She played a key role in our hybrid support program, handling both ticket-based and real-time chat support efficiently and professionally. Beyond her technical strengths, she actively contributed to organizing team events and boosting team morale. Her collaborative spirit and creativity truly made a positive impact on our team culture. I would be glad to work with her again.<span class="quote-mark">"</span></p>
+                    <p class="testimonial-author">Past Teammate, Atlassian</p>
+                </div>
+                <div class="testimonial-card card-orange" style="--rotation: -5deg;">
+                    <p class="testimonial-text"><span class="quote-mark">"</span>Whoever hires Cloe will be lucky to pick her up. She's an incredible person, picks things up quickly, is super positive, and excels at any task given to her.<span class="quote-mark">"</span></p>
+                    <p class="testimonial-author">Past Teammate, Atlassian</p>
+                </div>
+                <div class="testimonial-card card-dark" style="--rotation: 4deg;">
                     <p class="testimonial-text"><span class="quote-mark">"</span>A top talent support engineer! A great addition to any support organization that is looking for an engineer who can make an immediate positive impact on the business and the team!<span class="quote-mark">"</span></p>
-                    <p class="testimonial-author">Past Manager - Atlassian</p>
+                    <p class="testimonial-author">Past Manager, Atlassian</p>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section class="experience" id="experience">
-        <div class="container">
-            <div class="experience-header">
-                <p class="experience-eyebrow">Where I've Contributed</p>
-                <h2>Professional Experience</h2>
-                <p class="experience-intro">A mix of support engineering, technical teaching, and leadership roles where I solved problems, improved systems, and helped people grow.</p>
-            </div>
-
-            <div class="timeline">
-                <!-- Experience Item 1 -->
-                <div class="timeline-item">
-                    <div class="timeline-dot" style="--dot-color: var(--primary-blue);"></div>
-                    <div class="timeline-card">
-                        <div class="card-header">
-                            <div class="card-header-main">
-                                <h3>Senior Support Engineer</h3>
-                                <p class="company">Sourcegraph • San Francisco, CA (Remote)</p>
-                            </div>
-                            <p class="dates">October 2025 – Present</p>
-                        </div>
-                        <ul class="experience-highlights">
-                            <li>Engineer and support large-scale Sourcegraph deployments, enabling developers to search, understand, and automate code across complex environments.</li>
-                            <li>Deliver reliable, high-performance deployments across both cloud and on-premise architectures, with a focus on stability, scalability, and customer success.</li>
-                            <li>Partner closely with engineering teams to streamline CI/CD pipelines and improve the speed and consistency of deployment workflows.</li>
-                        </ul>
-                        <div class="skills-grid">
-                            <div class="skill-badge">CI/CD</div>
-                            <div class="skill-badge">Containerization</div>
-                            <div class="skill-badge">Distributed Systems</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Experience Item 2 -->
-                 <div class="timeline-item">
-                    <div class="timeline-dot" style="--dot-color: var(--primary-green);"></div>
-                    <div class="timeline-card">
-                        <div class="card-header">
-                            <div class="card-header-main">
-                                <h3>Senior Code Coach</h3>
-                                <p class="company">The Coder School Berkeley • Berkeley, CA (Remote)</p>
-                            </div>
-                            <p class="dates">August 2019 – Present</p>
-                        </div>
-                        <ul class="experience-highlights">
-                            <li>Mentored 100+ students ages 8-18 in 1:1 sessions and group classes, building coding skills and confidence through tailored instruction.</li>
-                            <li>Taught 5+ programming languages (Python, JavaScript/HTML, Lua) while adapting to diverse learning styles and maximizing engagement.</li>
-                            <li>Guided students to secure first-place awards in local coding challenges and recognition in national competitions.</li>
-                            <li>Spearheaded curriculum improvements and operational enhancements while mentoring newly onboarded coaches.</li>
-                        </ul>
-                        <div class="skills-grid">
-                            <div class="skill-badge">Scratch</div>
-                            <div class="skill-badge">Python</div>
-                            <div class="skill-badge">Java</div>
-                            <div class="skill-badge">JavaScript/HTML/CSS</div>
-                            <div class="skill-badge">Lua</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Experience Item 3 -->
-                <div class="timeline-item">
-                    <div class="timeline-dot" style="--dot-color: var(--primary-blue);"></div>
-                    <div class="timeline-card">
-                        <div class="card-header">
-                            <div class="card-header-main">
-                                <h3>Support Engineer 2</h3>
-                                <p class="company">Atlassian • Sydney, Australia (Remote)</p>
-                            </div>
-                            <p class="dates">July 2023 – Aug 2025</p>
-                        </div>
-                        <ul class="experience-highlights">
-                            <li>Delivered technical support for Atlassian products, managing 5+ tickets daily and achieving a 3.6 average daily closure rate across diverse customer use cases.</li>
-                            <li>Effectively resolved customer issues with SAML and SCIM integrations, user and group management, and security settings, achieving 90.4 NPS.</li>
-                            <li>Utilized REST APIs to streamline workflows, reducing average handling time to 36 minutes per request.</li>
-                            <li>Led 4+ synchronous and asynchronous team events, enhancing collaboration among colleagues across the US, Brazil, and Mexico.</li>
-                        </ul>
-                        <div class="skills-grid">
-                            <div class="skill-badge">REST APIs</div>
-                            <div class="skill-badge">SAML & SCIM</div>
-                            <div class="skill-badge">Jira & Confluence</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Experience Item 4 -->
-                <div class="timeline-item">
-                    <div class="timeline-dot" style="--dot-color: var(--rose-kiss);"></div>
-                    <div class="timeline-card">
-                        <div class="card-header">
-                            <div class="card-header-main">
-                                <h3>Software Development Intern</h3>
-                                <p class="company">Technology Enhanced Learning in Science • UC Berkeley, CA</p>
-                            </div>
-                            <p class="dates">October 2022 – May 2023</p>
-                        </div>
-                        <ul class="experience-highlights">
-                            <li>Selected by faculty to join a graduate-level course and research lab improving online learning outcomes.</li>
-                            <li>Collaborated with graduate candidates to analyze and label student response data for AI/NLP model training.</li>
-                            <li>Contributed to feature improvements on the WISE (Web-based Inquiry Science Environment) platform.</li>
-                            <li>Programmed in Java, HTML, and TypeScript using the Angular framework.</li>
-                        </ul>
-                        <div class="skills-grid">
-                            <div class="skill-badge">Tokenization</div>
-                            <div class="skill-badge">TypeScript</div>
-                            <div class="skill-badge">Angular</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Experience Item 5 -->
-                <div class="timeline-item">
-                    <div class="timeline-dot" style="--dot-color: var(--primary-orange);"></div>
-                    <div class="timeline-card">
-                        <div class="card-header">
-                            <div class="card-header-main">
-                                <h3>Food Service Supervisor</h3>
-                                <p class="company">Good Smoke BBQ • Rochester, NY</p>
-                            </div>
-                            <p class="dates">April 2015 – June 2021</p>
-                        </div>
-                        <ul class="experience-highlights">
-                            <li>Adapted quickly to fast-paced environment, building knowledge of restaurant operations while maintaining high service standards.</li>
-                            <li>Cross-trained in 5+ roles (server, catering, line cook), demonstrating flexibility and commitment to growth and excellence.</li>
-                            <li>Directed onboarding for 30+ team members, ensuring alignment with service standards and organizational values.</li>
-                            <li>Configured and maintained social media, networks, and POS systems across 3 locations, ensuring minimal downtime and operational efficiency.</li>
-                        </ul>
-                        <div class="skills-grid">
-                            <div class="skill-badge">Restaurant Operations</div>
-                            <div class="skill-badge">Brand Management</div>
-                            <div class="skill-badge">Customer Satisfaction</div>
-                            <div class="skill-badge">Clover Systems</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education & Skills Section - Two Column Layout -->
-    <section class="skills-education">
-        <div class="container education-skills-wrapper">
-            <!-- Education Column (Left) -->
-            <div class="education-column">
-                <div class="education-content">
-                    <p class="education-eyebrow">Where I've Grown</p>
-                    <h2>Education</h2>
-                    <p class="education-intro">The academic background and early leadership experiences that shaped how I approach problem-solving, teaching, and technical work.</p>
-                </div>
-                <div class="education-items">
-                    <div class="education-item">
-                        <div class="education-icon">🎓</div>
-                        <div class="education-copy">
-                            <div class="education-top">
-                                <div>
-                                    <h3>University of California, Berkeley</h3>
-                                    <p class="degree">Bachelor of Arts in Computer Science</p>
-                                </div>
-                                <p class="duration">August 2019 – May 2023</p>
-                            </div>
-                            <ul class="education-highlights">
-                                <li>Minor in STEM Education through Cal Teach.</li>
-                                <li>Combined technical coursework with teaching and communication-focused training.</li>
-                            </ul>
-                            <div class="coursework-tags">
-                                <span>Databases</span>
-                                <span>Artificial Intelligence</span>
-                                <span>Data Science</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="education-item">
-                        <div class="education-icon">🎓</div>
-                        <div class="education-copy">
-                            <div class="education-top">
-                                <div>
-                                    <h3>Webster Schroeder High School</h3>
-                                    <p class="degree">Diploma</p>
-                                </div>
-                                <p class="duration">August 2015 – May 2019</p>
-                            </div>
-                            <ul class="education-highlights">
-                                <li>Graduated Summa Cum Laude.</li>
-                                <li>Co-founded and led the Computer Science League.</li>
-                                <li>Served as captain of the Girls Varsity Swim Team.</li>
-                            </ul>
-                            <div class="coursework-tags">
-                                <span>AP Computer Science A</span>
-                                <span>AP Calculus BC</span>
-                                <span>AP Statistics</span>
-                                <span>AP Physics C</span>
-                                <span>AP Economics</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Skills Column (Right) -->
-            <div class="skills-column">
-                <div class="skills-summary">
-                    <div class="skills-summary-header">
-                        <p class="skills-eyebrow">What I Bring</p>
-                        <h2>Skills</h2>
-                        <p class="skills-intro">A practical mix of engineering, systems thinking, and teaching-focused strengths shaped by support, infrastructure, and mentoring work.</p>
-                    </div>
-
-                    <div class="skills-summary-card">
-                        <div class="skill-group">
-                            <h3>Languages</h3>
-                            <div class="skill-pills">
-                                <span class="skill-pill">Python</span>
-                                <span class="skill-pill">Java</span>
-                                <span class="skill-pill">JavaScript</span>
-                                <span class="skill-pill">HTML/CSS</span>
-                                <span class="skill-pill">Lua</span>
-                                <span class="skill-pill">Swift</span>
-                                <span class="skill-pill">SQL</span>
-                                <span class="skill-pill">R</span>
-                                <span class="skill-pill">Scratch/Snap!</span>
-                            </div>
-                        </div>
-                        
-                        <div class="skill-group">
-                            <h3>Frameworks, Protocols, and Systems</h3>
-                            <div class="skill-pills">
-                                <span class="skill-pill">CI/CD</span>
-                                <span class="skill-pill">SCIM</span>
-                                <span class="skill-pill">SAML</span>
-                                <span class="skill-pill">Cloud Deployments</span>
-                                <span class="skill-pill">Docker-Compose</span>
-                                <span class="skill-pill">Kubernetes</span>
-                                <span class="skill-pill">Knowledge Management</span>
-                                <span class="skill-pill">REST APIs</span>
-                                <span class="skill-pill">Git</span>
-                                <span class="skill-pill">React</span>
-                                <span class="skill-pill">Angular</span>
-                                <span class="skill-pill">Pandas</span>
-                                <span class="skill-pill">NumPy</span>
-                            </div>
-                        </div>
-
-                        <div class="skill-group">
-                            <h3>Tools</h3>
-                            <div class="skill-pills">
-                                <span class="skill-pill">GitHub</span>
-                                <span class="skill-pill">Jira/JSM</span>
-                                <span class="skill-pill">Confluence</span>
-                                <span class="skill-pill">Google Workspace</span>
-                                <span class="skill-pill">Mircrosoft Office</span>
-                                <span class="skill-pill">Squarespace</span>
-                                <span class="skill-pill">Slack</span>
-                                <span class="skill-pill">Intercom</span>
-                            </div>
-                        </div>
-
-                        <div class="skill-group">
-                            <h3>Strengths</h3>
-                            <div class="skill-pills">
-                                <span class="skill-pill">Technical Support</span>
-                                <span class="skill-pill">Problem Solving</span>
-                                <span class="skill-pill">Mentoring</span>
-                                <span class="skill-pill">Communication</span>
-                                <span class="skill-pill">Cross-Functional Collaboration</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- OLD EDUCATION & SKILLS SECTION (COMMENTED OUT)
-    <section class="education">
-        <div class="container">
-            <h2>Education</h2>
-            
-            <div class="education-card">
-                <h3>University of California, Berkeley</h3>
-                <p class="degree">Bachelor of Arts in Computer Science</p>
-                <p> August 2019 – May 2023</p>
-                <p class="minor">Minor in STEM Education with Cal Teach</p>
-                
-                <div class="coursework">
-                    <h4>Related Coursework:</h4> 
-                    <div class="course-tags">
-                        <span>Databases (SQL, indexing, query optimization)</span>
-                        <span>Artificial Intelligence (machine learning, search algorithms)</span>
-                        <span>Data Science (pandas, NumPy, data wrangling, visualization)</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <h2>Programming Skills</h2>
-            
-            <div class="skill-category">
-                    <h3>Programming Languages</h3>
-                    <div class="skill-list">
-                        <div class="skill-item">
-                            <div class="skill-name">Python</div>
-                            <div class="skill-level">Advanced</div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-name">JavaScript</div>
-                            <div class="skill-level">Advanced</div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-name">Java</div>
-                            <div class="skill-level">Advanced</div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-name">HTML/CSS</div>
-                            <div class="skill-level">Intermediate</div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-name">SQL</div>
-                            <div class="skill-level">Intermediate</div>
-                        </div>
-                    </div>
-                </div>
-        </div>
-    </section>
-    -->
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio">
-        <div id="photography-portfolio" class="container">
-            <div class="portfolio-header">
-                <p class="portfolio-eyebrow">What I've Built</p>
-                <h2>Portfolio</h2>
-                <p class="section-subtitle">A mix of creative and technical projects that reflect how I like to build: practical, thoughtful, and a little playful.</p>
-            </div>
-
-            <div class="projects-grid">
-                <article class="project-card project-card-featured">
-                    <a href="photography.html" class="project-link">
-                        <div class="project-header">
-                            <div class="project-title-group">
-                                <h3>Photography Portfolio</h3>
-                                <p class="project-kicker">Personal project</p>
-                            </div>
-                            <span class="category">Hobby</span>
-                        </div>
-                        <p class="project-summary">A dedicated portfolio for my photography work, featuring portraits, landscapes and event coverage.</p>
-                        <ul class="project-points">
-                            <li>A collection of shots I've taken over the years, shared as a place to showcase work I'm proud of.</li>
-                            <li>Self-taught after taking photography in high school, and now revisiting the hobby with fresh curiosity.</li>
-                        </ul>
-                        <div class="tech-tags">
-                            <span class="tech-tag">Lightroom</span>
-                            <span class="tech-tag">Portfolio Design</span>
-                            <span class="tech-tag">Photography</span>
-                        </div>
-                    </a>
-                </article>
-
-                <article class="project-card">
-                    <a href="https://sites.google.com/view/cloe-wemett-cs194-berkeley" class="project-link">
-                    <div class="project-header">
-                        <div class="project-title-group">
-                            <h3>Colorizing the Prokudin-Gorskii Photo Collection</h3>
-                            <p class="project-kicker">Computer vision project</p>
-                        </div>
-                        <span class="category">Computer Vision</span>
-                    </div>
-                    <p class="project-summary">A digital restoration project focused on aligning RGB negatives from early 20th century photographs to produce cohesive, colorized historical images.</p>
-                    <ul class="project-points">
-                        <li>Aligned historical RGB negatives into unified color photographs.</li>
-                        <li>Used SSD for lower-resolution processing and NCC with image pyramids for larger images.</li>
-                        <li>Improved image clarity and color accuracy across the final outputs.</li>
-                    </ul>
-                    <div class="tech-tags">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Image Processing</span>
-                        <span class="tech-tag">OpenCV</span>
-                        <span class="tech-tag">NumPy</span>
-                    </div>
-                    </a>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- <div class="divider contact-wave"></div> -->
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="contact-header">
-                <p class="contact-eyebrow">Want to Chat?</p>
-                <h2>Let's Connect</h2>
-                <p class="contact-subtitle">I’m always open to new opportunities, thoughtful collaborations, and conversations about support, teaching, and creative technical work.</p>
-            </div>
-            
-            <div class="contact-content">
-                <div class="contact-grid">
-                    <div class="contact-method">
-                        <div class="method-icon-wrapper">
-                            <span class="method-icon">📍</span>
-                        </div>
-                        <div class="method-content">
-                            <h3>Based In</h3>
-                            <p>San Diego, CA</p>
-                        </div>
-                    </div>
-                    <div class="contact-method">
-                        <div class="method-icon-wrapper">
-                            <span class="method-icon">📄</span>
-                        </div>
-                        <div class="method-content">
-                            <h3>Resume</h3>
-                            <a href="documents/CloeWemettResume2026.pdf" target="_blank" class="contact-link">Download Resume</a>
-                        </div>
-                    </div>
-                    <div class="contact-method">
-                        <div class="method-icon-wrapper">
-                            <span class="method-icon">💼</span>
-                        </div>
-                        <div class="method-content">
-                            <h3>LinkedIn</h3>
-                            <a href="https://linkedin.com/in/cloe-wemett" target="_blank" class="contact-link">linkedin.com/in/cloe-wemett</a>
-                        </div>
-                    </div>
-                    <div class="contact-method">
-                        <div class="method-icon-wrapper">
-                            <span class="method-icon">💾</span>
-                        </div>
-                        <div class="method-content">
-                            <h3>GitHub</h3>
-                            <a href="https://github.com/ccwemett" target="_blank" class="contact-link">github.com/ccwemett</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <form class="contact-form" id="contactForm">
-                    <div class="contact-form-header">
-                        <p class="contact-form-kicker">Send a message</p>
-                        <h3>Start the conversation</h3>
-                        <p class="contact-form-intro">Share a little about what you're working on or what you'd like to chat about.</p>
-                    </div>
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-inner">
+                <a href="index.html" class="footer-brand">
+                    <span class="logo-first">Cloe</span>
+                    <span class="logo-last">Wemett</span>
+                </a>
+                <nav class="footer-nav" aria-label="Footer navigation">
+                    <a href="about.html">About</a>
+                    <a href="services.html">Services</a>
+                    <a href="photography.html">Photography</a>
+                    <a href="services.html#contact">Contact</a>
+                </nav>
+                <p class="footer-copy">© 2026 Cloe Wemett · San Diego, CA</p>
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>
