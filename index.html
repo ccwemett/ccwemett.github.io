@@ -1,211 +1,201 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cloe Wemett</title>
+    <title>Cloe Wemett · Tutoring, Photography &amp; Tech Consulting in San Diego</title>
+    <meta name="description" content="Cloe Wemett offers math and programming tutoring, portrait and brand photography, and small business tech consulting in San Diego, CA.">
+    <meta name="theme-color" content="#f4e9e1">
+    <meta property="og:title" content="Cloe Wemett">
+    <meta property="og:description" content="Let's learn, create, and grow together. Tutoring, photography, and consulting.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://ccwemett.com/images/site/headshot.jpg">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Cpath fill='%23f475a7' d='M20,20 H50 C50,12 44,12 44,7 C44,1 51,2 60,2 C69,2 76,1 76,7 C76,12 70,12 70,20 H100 V50 C108,50 108,44 113,44 C119,44 118,51 118,60 C118,69 119,76 113,76 C108,76 108,70 100,70 V100 H70 C70,92 76,92 76,87 C76,81 69,82 60,82 C51,82 44,81 44,87 C44,92 50,92 50,100 H20 V70 C28,70 28,76 33,76 C39,76 38,69 38,60 C38,51 39,44 33,44 C28,44 28,50 20,50 Z'/%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <a href="#main" class="skip-link">Skip to content</a>
 
-    <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Main">
         <div class="nav-container">
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <a href="index.html" class="nav-brand" aria-label="Cloe Wemett home">
-                <span class="logo-first">Cloe</span>
-                <span class="logo-last">Wemett</span>
-            </a>
+            <a href="index.html" class="nav-brand" aria-label="Cloe Wemett home"><span>Cloe</span> <span class="logo-last">Wemett</span></a>
             <ul class="nav-links">
                 <li><a href="about.html">About</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="photography.html">Photography</a></li>
             </ul>
-            <div class="nav-contact-button">
-                <a href="services.html#contact" class="btn-touch">Get In Touch</a>
-            </div>
-        </div>
-        <div class="mobile-menu" id="mobileMenu">
-            <ul class="mobile-nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="photography.html">Photography</a></li>
-                <li><a href="services.html#contact" class="btn-touch" style="display:inline-block;margin-top:8px;">Get In Touch</a></li>
-            </ul>
+            <a href="services.html#contact" class="btn btn-primary nav-cta">Get in touch</a>
+            <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
         </div>
     </nav>
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="photography.html">Photography</a></li>
+            <li><a href="services.html#contact" class="btn btn-primary">Get in touch</a></li>
+        </ul>
+    </div>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
+    <main id="main">
+        <!-- Hero -->
+        <section class="hero" id="home">
+            <div class="container hero-grid">
                 <div class="hero-text">
-                    <p class="hero-eyebrow">Hi, I'm Cloe!</p>
-                    <h1>Let's <span class="highlight">learn</span>, <span class="highlight">create</span>, and <span class="highlight">grow</span> together.</h1>
-                    <p class="hero-subtitle">I offer personalized tutoring in math and programming, photography for portraits and brands, and consulting to help small businesses work smarter with technology.</p>
-                    <div class="hero-highlights" aria-label="Services">
-                        <!-- <span>📚 Tutoring</span>
-                        <span>📷 Photography</span>
-                        <span>💡 Consulting</span> -->
-                        <span>📍 San Diego, CA</span>
-                    </div>
-                    <div class="hero-buttons">
-                        <a href="services.html" class="btn btn-primary">See My Services</a>
-                        <a href="about.html" class="btn btn-secondary">About Me</a>
+                    <p class="eyebrow">Hi, I'm Cloe!</p>
+                    <h1>Let's <span class="hl hl-1">learn</span>, <span class="hl hl-2">create</span>, and <span class="hl hl-3">grow</span> together.</h1>
+                    <p class="lede">Personalized tutoring in math and programming, photography for portraits and brands, and consulting to help small businesses work smarter with technology.</p>
+                    <p class="hero-meta">📍 San Diego, CA</p>
+                    <div class="btn-row">
+                        <a href="services.html" class="btn btn-primary">See my services</a>
+                        <a href="photography.html" class="btn btn-secondary">View my photography</a>
                     </div>
                 </div>
 
-                <div class="hero-image-wrapper">
-                    <div class="puzzle-piece hero-piece hero-piece-1" aria-hidden="true"></div>
-                    <div class="puzzle-piece hero-piece hero-piece-2" aria-hidden="true"></div>
-                    <div class="puzzle-piece hero-piece hero-piece-3" aria-hidden="true"></div>
-                    <div class="puzzle-piece hero-piece hero-piece-4" aria-hidden="true"></div>
-                    <div class="puzzle-piece hero-piece hero-piece-5" aria-hidden="true"></div>
-                    <div class="puzzle-piece hero-piece hero-piece-6" aria-hidden="true"></div>
-                    <div class="puzzle-piece hero-piece hero-piece-7" aria-hidden="true"></div>
-                    <div class="hero-image">
-                        <img src="images/headshot.jpeg" alt="Cloe Wemett">
-                    </div>
+                <div class="hero-visual" aria-label="Portrait of Cloe surrounded by puzzle pieces">
+                    <div class="hero-photo"><img src="images/site/headshot.jpg" alt="Cloe Wemett smiling" width="1600" height="1067" fetchpriority="high"></div>
+                    <span class="piece fly is-drag" data-depth="1.2" style="--s:24%;--c:var(--rose);--r:-14deg;left:0;top:2%;--fx:-80px;--fy:-60px;--fr:-60deg;--d:.05s;--dur:7s"></span>
+                    <span class="piece fly is-drag alt" data-depth="-0.9" style="--s:19%;--c:var(--gold);--r:18deg;right:6%;top:-2%;--fx:70px;--fy:-80px;--fr:50deg;--d:.2s;--dur:6s;--d2:.6s"></span>
+                    <span class="piece fly is-drag" data-depth="0.8" style="--s:22%;--c:var(--sky);--r:8deg;left:-3%;bottom:10%;--fx:-90px;--fy:40px;--fr:-40deg;--d:.35s;--dur:8s;--d2:1s"></span>
+                    <span class="piece fly is-drag alt" data-depth="-1.3" style="--s:26%;--c:var(--tangerine);--r:-10deg;right:-2%;bottom:4%;--fx:80px;--fy:70px;--fr:70deg;--d:.5s;--dur:7.5s;--d2:.3s"></span>
+                    <span class="piece fly is-drag" data-depth="0.6" style="--s:15%;--c:var(--lavender);--r:30deg;right:-4%;top:42%;--fx:90px;--fy:0px;--fr:90deg;--d:.65s;--dur:6.5s;--d2:.9s"></span>
+                    <span class="piece fly is-drag alt" data-depth="1" style="--s:14%;--c:var(--green);--r:-24deg;left:30%;bottom:-5%;--fx:0px;--fy:90px;--fr:-80deg;--d:.8s;--dur:9s;--d2:.2s"></span>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Services Teaser Section -->
-    <section class="services-teaser">
-        <div class="container">
-            <div class="services-teaser-header">
-                <p class="services-teaser-eyebrow">What I Do</p>
-                <h2>How I Can Help</h2>
-                <p class="services-teaser-subtitle">Three areas where I put my skills to work for you.</p>
-            </div>
-            <div class="services-teaser-grid">
-
-                <a href="services.html#tutoring" class="service-card">
-                    <div class="service-card-accent" style="background: var(--primary-blue);"></div>
-                    <div class="service-card-icon">📚</div>
-                    <h3>Math &amp; Programming Tutoring</h3>
-                    <p>From elementary math to college-level CS. Patient, personalized sessions that build real confidence and lasting skills.</p>
-                    <div class="service-card-tags">
-                        <span>All Ages</span>
-                        <span>All Levels</span>
-                        <span>1-on-1 Sessions</span>
-                    </div>
-                    <span class="service-card-cta">Learn more →</span>
-                </a>
-
-                <a href="services.html#photography" class="service-card">
-                    <div class="service-card-accent" style="background: var(--rose-kiss);"></div>
-                    <div class="service-card-icon">📷</div>
-                    <h3>Photography</h3>
-                    <p>Good photos do more than look nice. Whether it's portraits, brand content, or event coverage, I collaborate closely with every client to understand your vision and bring it to life.</p>
-                    <div class="service-card-tags">
-                        <span>Portraits</span>
-                        <span>Brand Shoots</span>
-                        <span>Events</span>
-                    </div>
-                    <span class="service-card-cta">Learn more →</span>
-                </a>
-
-                <a href="services.html#consulting" class="service-card">
-                    <div class="service-card-accent" style="background: var(--forest-green);"></div>
-                    <div class="service-card-icon">💡</div>
-                    <h3>Small Business Consulting</h3>
-                    <p>Tech setup, POS systems, workflow automation, and AI solutions. Spend less time on busywork and more on what you love.</p>
-                    <div class="service-card-tags">
-                        <span>Tech Setup</span>
-                        <span>AI Solutions</span>
-                        <span>Workflow Automation</span>
-                    </div>
-                    <span class="service-card-cta">Learn more →</span>
-                </a>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- About Teaser -->
-    <section class="about-teaser">
-        <div class="container">
-            <div class="about-teaser-wrapper">
-                <div class="about-image-wrapper about-image-left">
-                    <div class="puzzle-piece about-piece about-left-piece-1" aria-hidden="true"></div>
-                    <div class="puzzle-piece about-piece about-left-piece-2" aria-hidden="true"></div>
-                    <div class="puzzle-piece about-piece about-left-piece-3" aria-hidden="true"></div>
-                    <div class="puzzle-piece about-piece about-left-piece-4" aria-hidden="true"></div>
-                    <div class="puzzle-piece about-piece about-left-piece-5" aria-hidden="true"></div>
-                    <div class="about-image about-image-left">
-                        <img src="images/graduation.jpeg" alt="Cloe at graduation">
-                    </div>
+        <!-- Services -->
+        <section class="section edge-top bg-paper" id="services-teaser">
+            <div class="container">
+                <div class="section-head reveal">
+                    <p class="eyebrow" style="--c:var(--ocean)">What I do</p>
+                    <h2>Three ways I can help, <em>one piece at a time.</em></h2>
+                    <p class="lede">Every project starts by listening. I'll tailor the approach to you.</p>
                 </div>
-                <div class="about-teaser-content">
-                    <p class="about-teaser-eyebrow">A Little About Me</p>
-                    <h2>From kitchens to code and everywhere in between.</h2>
+                <div class="service-grid reveal">
+                    <a href="services.html#tutoring" class="service-card tint-blue has-knob">
+                        <span class="svc-icon" aria-hidden="true"></span>
+                        <h3>Math &amp; Programming Tutoring</h3>
+                        <p>From elementary math to college-level CS. Patient, personalized sessions that build real confidence and lasting skills.</p>
+                        <div class="tag-row"><span>All ages</span><span>All levels</span><span>1-on-1</span></div>
+                        <span class="more">Learn more <span>→</span></span>
+                    </a>
+                    <a href="services.html#photography" class="service-card tint-rose has-knob">
+                        <span class="svc-icon" aria-hidden="true"></span>
+                        <h3>Photography</h3>
+                        <p>Good photos do more than look nice. Portraits, brand content, or events: I work closely with you to bring your vision to life.</p>
+                        <div class="tag-row"><span>Portraits</span><span>Brand shoots</span><span>Events</span></div>
+                        <span class="more">Learn more <span>→</span></span>
+                    </a>
+                    <a href="services.html#consulting" class="service-card tint-green">
+                        <span class="svc-icon" aria-hidden="true"></span>
+                        <h3>Small Business Consulting</h3>
+                        <p>Tech setup, POS systems, workflow automation, and AI solutions. Spend less time on busywork and more on what you love.</p>
+                        <div class="tag-row"><span>Tech setup</span><span>AI solutions</span><span>Automation</span></div>
+                        <span class="more">Learn more <span>→</span></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Photo strip -->
+        <section class="section photo-strip edge-top" style="--sec-bg:var(--linen)">
+            <div class="container strip-foot reveal">
+                <div>
+                    <p class="eyebrow" style="--c:var(--tangerine)">Through my lens</p>
+                    <h2>Recent work</h2>
+                </div>
+                <a href="photography.html" class="btn btn-secondary">Full portfolio →</a>
+            </div>
+            <div class="strip-scroller" tabindex="0" aria-label="Selected photos, scroll sideways">
+                <figure class="strip-item"><img src="images/shoots/kiya-senior-portraits/thumbs/01.jpg" alt="Senior portrait beside stone columns" loading="lazy" width="506" height="760"><figcaption>Senior portraits</figcaption></figure>
+                <figure class="strip-item"><img src="images/shoots/joshua-tree/thumbs/03.jpg" alt="Hiker standing on granite boulders in Joshua Tree" loading="lazy" width="608" height="760"><figcaption>Joshua Tree</figcaption></figure>
+                <figure class="strip-item"><img src="images/shoots/world-of-coffee/thumbs/04.jpg" alt="Shelves of product bottles at World of Coffee" loading="lazy" width="608" height="760"><figcaption>World of Coffee</figcaption></figure>
+                <figure class="strip-item"><img src="images/shoots/diana-senior-portraits/thumbs/01.jpg" alt="Senior portrait" loading="lazy" width="507" height="760"><figcaption>Senior portraits</figcaption></figure>
+                <figure class="strip-item"><img src="images/shoots/yosemite/thumbs/02.jpg" alt="Yosemite landscape" loading="lazy" width="570" height="760"><figcaption>Yosemite</figcaption></figure>
+                <figure class="strip-item"><img src="images/shoots/wshs-graduation/thumbs/05.jpg" alt="Graduation portrait" loading="lazy" width="507" height="760"><figcaption>Graduation</figcaption></figure>
+            </div>
+        </section>
+
+        <!-- About teaser -->
+        <section class="section edge-top bg-paper">
+            <div class="container split">
+                <div class="split-photo reveal">
+                    <div class="pic"><img src="images/site/graduation.jpg" alt="Cloe in her graduation cap and gown" loading="lazy" width="1024" height="1536"></div>
+                    <span class="piece fly" data-depth="0.9" style="--s:22%;--c:var(--gold);--r:12deg;left:2%;top:4%;--d:0s"></span>
+                    <span class="piece fly alt" data-depth="-0.8" style="--s:18%;--c:var(--sky);--r:-20deg;right:4%;bottom:6%;--d:.2s;--dur:8s"></span>
+                </div>
+                <div class="reveal">
+                    <p class="eyebrow" style="--c:var(--lavender)">A little about me</p>
+                    <h2>From kitchens to code, and everywhere in between.</h2>
                     <p>I'm a UC Berkeley Computer Science grad with a background that spans restaurant leadership, technical support at Atlassian, coding mentorship, and photography. I bring hands-on grit and genuine curiosity to everything I take on.</p>
                     <p>Whether I'm tutoring a student through their first Python script, capturing someone's senior portraits, or helping a small business owner finally feel in control of their tech, I'm in my element when I'm helping people grow.</p>
-                    <a href="about.html" class="btn btn-primary" style="margin-top:12px;">My Full Story</a>
+                    <a href="about.html" class="btn btn-primary">My full story</a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Testimonials -->
-    <section class="testimonials">
-        <div class="container">
-            <div class="testimonials-header">
-                <p class="testimonials-eyebrow">What People Have To Say</p>
-                <h2>Trusted By Professionals</h2>
-            </div>
-            <div class="testimonials-grid">
-                <div class="testimonial-card card-purple" style="--rotation: -3deg;">
-                    <p class="testimonial-text"><span class="quote-mark">"</span>There's truly nothing like having an instructor who I can implicitly trust to always conscientiously hold their students to high standards... You've come through for us in countless ways. Your outstanding character and integrity mean so much to us.<span class="quote-mark">"</span></p>
-                    <p class="testimonial-author">Owner, The Coder School</p>
+        <!-- Testimonials -->
+        <section class="section edge-top bg-ink">
+            <div class="container">
+                <div class="section-head reveal">
+                    <p class="eyebrow" style="--c:var(--gold)">Kind words</p>
+                    <h2>Trusted by the people I've worked with.</h2>
                 </div>
-                <div class="testimonial-card card-blue" style="--rotation: -8deg;">
-                    <p class="testimonial-text"><span class="quote-mark">"</span>Whoever hires Cloe will be lucky to pick her up. She's an incredible person, picks things up quickly, is super positive, and excels at any task given to her.<span class="quote-mark">"</span></p>
-                    <p class="testimonial-author">Past Teammate, Atlassian</p>
-                </div>
-                <div class="testimonial-card card-pink" style="--rotation: 5deg;">
-                    <p class="testimonial-text"><span class="quote-mark">"</span>Cloe is extremely committed and highly competent in her work, consistently proving that speed and quality can go hand in hand. Any team would be lucky to have her!<span class="quote-mark">"</span></p>
-                    <p class="testimonial-author">Past Teammate, Atlassian</p>
-                </div>
-                <div class="testimonial-card card-green" style="--rotation: -3deg;">
-                    <p class="testimonial-text"><span class="quote-mark">"</span>Cloe is a highly skilled Technical Support Engineer who combines strong technical expertise with excellent communication. She played a key role in our hybrid support program, handling both ticket-based and real-time chat support efficiently and professionally. Beyond her technical strengths, she actively contributed to organizing team events and boosting team morale. Her collaborative spirit and creativity truly made a positive impact on our team culture. I would be glad to work with her again.<span class="quote-mark">"</span></p>
-                    <p class="testimonial-author">Past Teammate, Atlassian</p>
-                </div>
-                <div class="testimonial-card card-orange" style="--rotation: -5deg;">
-                    <p class="testimonial-text"><span class="quote-mark">"</span>Whoever hires Cloe will be lucky to pick her up. She's an incredible person, picks things up quickly, is super positive, and excels at any task given to her.<span class="quote-mark">"</span></p>
-                    <p class="testimonial-author">Past Teammate, Atlassian</p>
-                </div>
-                <div class="testimonial-card card-dark" style="--rotation: 4deg;">
-                    <p class="testimonial-text"><span class="quote-mark">"</span>A top talent support engineer! A great addition to any support organization that is looking for an engineer who can make an immediate positive impact on the business and the team!<span class="quote-mark">"</span></p>
-                    <p class="testimonial-author">Past Manager, Atlassian</p>
+                <div class="quotes">
+                    <blockquote class="quote wide reveal" style="--c:var(--lavender)">
+                        <p>There's truly nothing like having an instructor who I can implicitly trust to always conscientiously hold their students to high standards… You've come through for us in countless ways. Your outstanding character and integrity mean so much to us.</p>
+                        <cite>Owner, The Coder School</cite>
+                    </blockquote>
+                    <blockquote class="quote reveal" style="--c:var(--sky);--rd:.08s">
+                        <p>Whoever hires Cloe will be lucky to pick her up. She's an incredible person, picks things up quickly, is super positive, and excels at any task given to her.</p>
+                        <cite>Past teammate, Atlassian</cite>
+                    </blockquote>
+                    <blockquote class="quote reveal" style="--c:var(--rose);--rd:.16s">
+                        <p>Cloe is extremely committed and highly competent in her work, consistently proving that speed and quality can go hand in hand. Any team would be lucky to have her!</p>
+                        <cite>Past teammate, Atlassian</cite>
+                    </blockquote>
+                    <blockquote class="quote wide long reveal" style="--c:var(--green)">
+                        <p>Cloe is a highly skilled Technical Support Engineer who combines strong technical expertise with excellent communication. She played a key role in our hybrid support program, handling both ticket-based and real-time chat support efficiently and professionally. Beyond her technical strengths, she actively contributed to organizing team events and boosting team morale. Her collaborative spirit and creativity truly made a positive impact on our team culture. I would be glad to work with her again.</p>
+                        <cite>Past teammate, Atlassian</cite>
+                    </blockquote>
+                    <blockquote class="quote reveal" style="--c:var(--tangerine);--rd:.08s">
+                        <p>A top talent support engineer! A great addition to any support organization that is looking for an engineer who can make an immediate positive impact on the business and the team!</p>
+                        <cite>Past manager, Atlassian</cite>
+                    </blockquote>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
+        <!-- CTA -->
+        <section class="section cta-band edge-top bg-ocean">
+            <div class="piece-layer" aria-hidden="true">
+                <span class="piece fly" data-depth="0.7" style="--s:120px;--c:rgba(255,255,255,.14);--r:-12deg;left:-30px;top:20px;--d:0s;--dur:9s"></span>
+                <span class="piece fly alt" data-depth="-0.9" style="--s:150px;--c:rgba(255,255,255,.12);--r:22deg;right:-40px;bottom:-20px;--d:.2s;--dur:10s"></span>
+                <span class="piece fly" data-depth="0.5" style="--s:70px;--c:var(--gold);--r:10deg;right:14%;top:14%;--d:.4s"></span>
+            </div>
+            <div class="container reveal">
+                <h2 style="color:#fff">Ready to work together?</h2>
+                <p style="color:rgba(255,255,255,.88)">Whether you need a tutor, a photographer, or a tech consultant, I'd love to hear what you're working on.</p>
+                <div class="btn-row">
+                    <a href="services.html#contact" class="btn btn-light">Get in touch</a>
+                    <a href="services.html" class="btn btn-ghost">See my services</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <footer class="site-footer">
-        <div class="container">
-            <div class="footer-inner">
-                <a href="index.html" class="footer-brand">
-                    <span class="logo-first">Cloe</span>
-                    <span class="logo-last">Wemett</span>
-                </a>
-                <nav class="footer-nav" aria-label="Footer navigation">
-                    <a href="about.html">About</a>
-                    <a href="services.html">Services</a>
-                    <a href="photography.html">Photography</a>
-                    <a href="services.html#contact">Contact</a>
-                </nav>
-                <p class="footer-copy">© 2026 Cloe Wemett · San Diego, CA</p>
-            </div>
+        <div class="container footer-inner">
+            <a href="index.html" class="footer-brand">Cloe <span class="logo-last">Wemett</span></a>
+            <nav class="footer-nav" aria-label="Footer">
+                <a href="about.html">About</a><a href="services.html">Services</a><a href="photography.html">Photography</a><a href="services.html#contact">Contact</a>
+            </nav>
+            <p class="footer-copy">© 2026 Cloe Wemett · San Diego, CA</p>
         </div>
     </footer>
 

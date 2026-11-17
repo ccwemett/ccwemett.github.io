@@ -1,3 +1,9 @@
 theme: jekyll-theme-minimal
 title: Cloe Wemett
 description: Check out what I've been working on!
+
+# Keep dev-only files out of the published site
+exclude:
+  - tools
+  - originals
+  - README.md
