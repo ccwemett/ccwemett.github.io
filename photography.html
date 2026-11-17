@@ -1,600 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cloe Wemett - Photography</title>
+    <title>Photography · Cloe Wemett</title>
+    <meta name="description" content="Portrait, event and landscape photography by Cloe Wemett in San Diego, CA.">
+    <meta name="theme-color" content="#f4e9e1">
+    <meta property="og:title" content="Photography · Cloe Wemett">
+    <meta property="og:description" content="Portrait, event and landscape photography by Cloe Wemett in San Diego, CA.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://ccwemett.com/images/site/headshot.jpg">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Cpath fill='%23f475a7' d='M20,20 H50 C50,12 44,12 44,7 C44,1 51,2 60,2 C69,2 76,1 76,7 C76,12 70,12 70,20 H100 V50 C108,50 108,44 113,44 C119,44 118,51 118,60 C118,69 119,76 113,76 C108,76 108,70 100,70 V100 H70 C70,92 76,92 76,87 C76,81 69,82 60,82 C51,82 44,81 44,87 C44,92 50,92 50,100 H20 V70 C28,70 28,76 33,76 C39,76 38,69 38,60 C38,51 39,44 33,44 C28,44 28,50 20,50 Z'/%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <style>
-        .photo-page {
-            min-height: 100vh;
-            padding: 140px 0 72px;
-            background:
-                radial-gradient(circle at top left, rgba(245, 219, 85, 0.32), transparent 30%),
-                radial-gradient(circle at top right, rgba(101, 183, 246, 0.24), transparent 34%),
-                linear-gradient(180deg, #f7efe8 0%, #f4e9e1 100%);
-        }
-
-        .photo-shell {
-            max-width: 1180px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        .photo-hero {
-            display: grid;
-            grid-template-columns: minmax(0, 1fr) minmax(280px, 380px);
-            align-items: center;
-            gap: 32px;
-            margin-bottom: 48px;
-            padding: 40px;
-            border: 2px solid var(--ocean-deep);
-            border-radius: 36px;
-            background: rgba(255, 255, 255, 0.68);
-            box-shadow: 14px 14px 0 rgba(21, 107, 191, 0.12);
-        }
-
-        .photo-hero-copy {
-            min-width: 0;
-        }
-
-        .photo-kicker {
-            margin-bottom: 10px;
-            font-size: 0.95rem;
-            font-weight: 700;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-            color: var(--rose-kiss);
-        }
-
-        .photo-hero h1 {
-            margin-bottom: 14px;
-            font-size: clamp(2.6rem, 6vw, 4rem);
-            line-height: 0.95;
-            color: var(--ocean-deep);
-        }
-
-        .photo-intro {
-            max-width: 680px;
-            font-size: 1.08rem;
-        }
-
-        .photo-hero-image {
-            width: 100%;
-            margin: 0;
-            aspect-ratio: 4 / 5;
-            overflow: hidden;
-            border: 2px solid var(--ocean-deep);
-            border-radius: 28px;
-            background: #f4e9e1;
-            box-shadow: 10px 10px 0 rgba(21, 107, 191, 0.12);
-        }
-
-        .photo-hero-image img {
-            display: block;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .wip-note {
-            display: inline-block;
-            margin-top: 24px;
-            padding: 14px 18px;
-            border-radius: 20px;
-            background: var(--royal-gold);
-            color: var(--ocean-deep);
-            font-weight: 600;
-            box-shadow: 6px 6px 0 rgba(21, 107, 191, 0.18);
-        }
-
-        .photo-nav {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 14px;
-            margin-top: 24px;
-        }
-
-        .photo-nav a {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            padding: 10px 16px;
-            border: 1px solid var(--ocean-deep);
-            border-radius: 999px;
-            color: var(--ocean-deep);
-            font-weight: 600;
-            text-decoration: none;
-            background: rgba(255, 255, 255, 0.78);
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
-
-        .photo-nav a:hover,
-        .photo-nav a:focus-visible {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 18px rgba(21, 107, 191, 0.14);
-        }
-
-        .gallery-section {
-            margin-bottom: 48px;
-            padding: 28px;
-            border-radius: 28px;
-            background: rgba(255, 255, 255, 0.64);
-            border: 1px solid rgba(21, 107, 191, 0.16);
-        }
-
-        .gallery-section h2 {
-            margin-bottom: 6px;
-            font-size: clamp(1.6rem, 4vw, 2.4rem);
-            color: var(--ocean-deep);
-        }
-
-        .gallery-section p {
-            margin-bottom: 20px;
-        }
-
-        .photo-footer-cta {
-            margin-top: 20px;
-            padding: 32px 28px;
-            border: 2px solid var(--ocean-deep);
-            border-radius: 28px;
-            background: rgba(255, 255, 255, 0.72);
-            text-align: center;
-            box-shadow: 12px 12px 0 rgba(21, 107, 191, 0.12);
-        }
-
-        .photo-footer-cta p {
-            max-width: 680px;
-            margin: 0 auto 18px;
-        }
-
-        .photo-footer-link {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            padding: 12px 22px;
-            border-radius: 999px;
-            border: 1px solid var(--ocean-deep);
-            background: var(--ocean-deep);
-            color: #ffffff;
-            font-weight: 700;
-            text-decoration: none;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
-
-        .photo-footer-link:hover,
-        .photo-footer-link:focus-visible {
-            transform: translateY(-2px);
-            box-shadow: 0 12px 20px rgba(21, 107, 191, 0.18);
-        }
-
-        .gallery-grid {
-            display: flex;
-            gap: 18px;
-            overflow-x: auto;
-            overflow-y: hidden;
-            padding: 8px 4px 14px;
-            scroll-snap-type: x proximity;
-            scrollbar-width: thin;
-            scrollbar-color: rgba(21, 107, 191, 0.45) rgba(21, 107, 191, 0.1);
-        }
-
-        .gallery-grid::-webkit-scrollbar {
-            height: 10px;
-        }
-
-        .gallery-grid::-webkit-scrollbar-track {
-            background: rgba(21, 107, 191, 0.1);
-            border-radius: 999px;
-        }
-
-        .gallery-grid::-webkit-scrollbar-thumb {
-            background: rgba(21, 107, 191, 0.42);
-            border-radius: 999px;
-        }
-
-        .gallery-grid a {
-            display: block;
-            flex: 0 0 280px;
-            overflow: hidden;
-            border-radius: 24px;
-            background: #ffffff;
-            box-shadow: 0 14px 24px rgba(21, 107, 191, 0.08);
-            cursor: zoom-in;
-            scroll-snap-align: start;
-        }
-
-        .gallery-grid img {
-            display: block;
-            width: 100%;
-            height: 280px;
-            object-fit: cover;
-            transition: transform 0.35s ease, filter 0.35s ease;
-        }
-
-        .gallery-grid a:hover img,
-        .gallery-grid a:focus-visible img {
-            transform: scale(1.04);
-            filter: saturate(1.05);
-        }
-
-        .featured-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-        }
-
-        .featured-grid img {
-            height: 340px;
-        }
-
-        .lightbox {
-            position: fixed;
-            inset: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 24px;
-            background: rgba(10, 27, 47, 0.78);
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity 0.2s ease, visibility 0.2s ease;
-            z-index: 2000;
-        }
-
-        .lightbox.is-open {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        .lightbox-dialog {
-            position: relative;
-            width: min(960px, 100%);
-            max-height: min(88vh, 920px);
-            padding: 18px;
-            border-radius: 28px;
-            background: rgba(255, 255, 255, 0.96);
-            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.22);
-        }
-
-        .lightbox-nav {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 50px;
-            height: 50px;
-            border: 0;
-            border-radius: 999px;
-            background: rgba(21, 107, 191, 0.14);
-            color: var(--ocean-deep);
-            font-size: 2rem;
-            line-height: 1;
-            cursor: pointer;
-            transition: background 0.2s ease, transform 0.2s ease;
-        }
-
-        .lightbox-nav:hover,
-        .lightbox-nav:focus-visible {
-            background: rgba(21, 107, 191, 0.24);
-            transform: translateY(-50%) scale(1.04);
-        }
-
-        .lightbox-prev {
-            left: 18px;
-        }
-
-        .lightbox-next {
-            right: 18px;
-        }
-
-        .lightbox-close {
-            position: absolute;
-            top: 12px;
-            right: 12px;
-            width: 42px;
-            height: 42px;
-            border: 0;
-            border-radius: 999px;
-            background: rgba(21, 107, 191, 0.12);
-            color: var(--ocean-deep);
-            font-size: 1.8rem;
-            line-height: 1;
-            cursor: pointer;
-        }
-
-        .lightbox-close:hover,
-        .lightbox-close:focus-visible {
-            background: rgba(21, 107, 191, 0.2);
-        }
-
-        .lightbox img {
-            display: block;
-            width: 100%;
-            max-height: calc(88vh - 36px);
-            object-fit: contain;
-            border-radius: 18px;
-        }
-
-        @media (max-width: 720px) {
-            .photo-page {
-                padding-top: 120px;
-            }
-
-            .photo-hero {
-                grid-template-columns: 1fr;
-                gap: 24px;
-            }
-
-            .photo-hero,
-            .gallery-section {
-                padding: 24px;
-            }
-
-            .photo-hero-image {
-                max-width: 360px;
-            }
-
-            .gallery-grid a {
-                flex-basis: 220px;
-            }
-
-            .gallery-grid img,
-            .featured-grid img {
-                height: 220px;
-            }
-
-            .lightbox {
-                padding: 16px;
-            }
-
-            .lightbox-dialog {
-                padding: 14px;
-                border-radius: 22px;
-            }
-
-            .lightbox-nav {
-                width: 44px;
-                height: 44px;
-                font-size: 1.75rem;
-            }
-
-            .lightbox-prev {
-                left: 10px;
-            }
-
-            .lightbox-next {
-                right: 10px;
-            }
-        }
-    </style>
 </head>
 <body>
-    <nav class="navbar">
+    <a href="#main" class="skip-link">Skip to content</a>
+
+    <nav class="navbar" aria-label="Main">
         <div class="nav-container">
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <a href="index.html" class="nav-brand" aria-label="Cloe Wemett home">
-                <span class="logo-first">Cloe</span>
-                <span class="logo-last">Wemett</span>
-            </a>
+            <a href="index.html" class="nav-brand" aria-label="Cloe Wemett home"><span>Cloe</span> <span class="logo-last">Wemett</span></a>
             <ul class="nav-links">
                 <li><a href="about.html">About</a></li>
                 <li><a href="services.html">Services</a></li>
-                <li><a href="photography.html" class="nav-active">Photography</a></li>
+                <li><a class="nav-active" aria-current="page" href="photography.html">Photography</a></li>
             </ul>
-            <div class="nav-contact-button">
-                <a href="services.html#contact" class="btn-touch">Get In Touch</a>
-            </div>
-        </div>
-        <div class="mobile-menu" id="mobileMenu">
-            <ul class="mobile-nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="photography.html">Photography</a></li>
-                <li><a href="services.html#contact" class="btn-touch" style="display:inline-block;margin-top:8px;">Get In Touch</a></li>
-            </ul>
+            <a href="services.html#contact" class="btn btn-primary nav-cta">Get in touch</a>
+            <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
         </div>
     </nav>
-
-    <main class="photo-page">
-        <div class="photo-shell">
-            <section class="photo-hero">
-                <div class="photo-hero-copy">
-                    <p class="photo-kicker">Photography</p>
-                    <h1>Collected Moments<br> Through My Lens</h1>
-                    <p class="photo-intro">This page is still a work in progress, but here are some pictures for the meantime. I wanted to get the gallery up now and keep refining the presentation as I add more. The full collection is grouped by shoot for now.</p>
-                    <p class="wip-note">Work in progress</p>
-                    <!-- <div class="photo-nav">
-                        <a href="#featured">Featured</a>
-                        <a href="#portraits">Portraits</a>
-                        <a href="#landscapes">Landscapes</a>
-                        <a href="#events">Events</a>
-                    </div> -->
-                </div>
-                <figure class="photo-hero-image">
-                    <img src="images/headshot3.JPG" alt="Cloe">
-                </figure>
-            </section>
-
-            <!-- <section id="gallery" class="gallery-section">
-                <h2>All Photos</h2>
-                <p>The full collection is grouped by shoot for now.</p>
-                <div class="photo-nav">
-                    <a href="#kiya">Kiya</a>
-                    <a href="#diana">Diana</a>
-                    <a href="#joshua-tree">Joshua Tree</a>
-                    <a href="#yosemite">Yosemite</a>
-                    <a href="#graduation">Graduation</a>
-                </div>
-            </section> -->
-
-            <section id="world-of-coffee-2026" class="gallery-section">
-                <h2>World of Coffee 2026</h2>
-                <div class="gallery-grid">
-                    <a href="images/photographyPortfolio/World-of-Coffee-2026/1.jpg" class="lightbox-trigger"><img src="images/photographyPortfolio/World-of-Coffee-2026/1.jpg" alt="World of Coffee 2026 photo 1"></a>
-                    <a href="images/photographyPortfolio/World-of-Coffee-2026/2.jpg" class="lightbox-trigger"><img src="images/photographyPortfolio/World-of-Coffee-2026/2.jpg" alt="World of Coffee 2026 photo 2"></a>
-                    <a href="images/photographyPortfolio/World-of-Coffee-2026/3.jpg" class="lightbox-trigger"><img src="images/photographyPortfolio/World-of-Coffee-2026/3.jpg" alt="World of Coffee 2026 photo 3"></a>
-                    <a href="images/photographyPortfolio/World-of-Coffee-2026/4.jpg" class="lightbox-trigger"><img src="images/photographyPortfolio/World-of-Coffee-2026/4.jpg" alt="World of Coffee 2026 photo 4"></a>
-                    <a href="images/photographyPortfolio/World-of-Coffee-2026/5.jpg" class="lightbox-trigger"><img src="images/photographyPortfolio/World-of-Coffee-2026/5.jpg" alt="World of Coffee 2026 photo 5"></a>
-                    <a href="images/photographyPortfolio/World-of-Coffee-2026/6.jpg" class="lightbox-trigger"><img src="images/photographyPortfolio/World-of-Coffee-2026/6.jpg" alt="World of Coffee 2026 photo 6"></a>
-                    <a href="images/photographyPortfolio/World-of-Coffee-2026/7.jpg" class="lightbox-trigger"><img src="images/photographyPortfolio/World-of-Coffee-2026/7.jpg" alt="World of Coffee 2026 photo 7"></a>
-                    <a href="images/photographyPortfolio/World-of-Coffee-2026/8.jpg" class="lightbox-trigger"><img src="images/photographyPortfolio/World-of-Coffee-2026/8.jpg" alt="World of Coffee 2026 photo 8"></a>
-                </div>
-            </section>
-
-            <section id="joshua-tree" class="gallery-section">
-                <h2>Joshua Tree 2025</h2>
-                <div class="gallery-grid">
-                    <a href="images/photographyPortfolio/joshua-tree/1.jpg" class="lightbox-trigger"><img src="images/photographyPortfolio/joshua-tree/1.jpg" alt="Joshua Tree landscape 1"></a>
-                    <a href="images/photographyPortfolio/joshua-tree/2.jpg" class="lightbox-trigger"><img src="images/photographyPortfolio/joshua-tree/2.jpg" alt="Joshua Tree landscape 2"></a>
-                    <a href="images/photographyPortfolio/joshua-tree/3.jpg" class="lightbox-trigger"><img src="images/photographyPortfolio/joshua-tree/3.jpg" alt="Joshua Tree landscape 3"></a>
-                    <a href="images/photographyPortfolio/joshua-tree/4.jpg" class="lightbox-trigger"><img src="images/photographyPortfolio/joshua-tree/4.jpg" alt="Joshua Tree landscape 4"></a>
-                    <a href="images/photographyPortfolio/joshua-tree/5.jpg" class="lightbox-trigger"><img src="images/photographyPortfolio/joshua-tree/5.jpg" alt="Joshua Tree landscape 5"></a>
-                    <a href="images/photographyPortfolio/joshua-tree/6.jpg" class="lightbox-trigger"><img src="images/photographyPortfolio/joshua-tree/6.jpg" alt="Joshua Tree landscape 6"></a>
-                    <a href="images/photographyPortfolio/joshua-tree/7.jpg" class="lightbox-trigger"><img src="images/photographyPortfolio/joshua-tree/7.jpg" alt="Joshua Tree landscape 7"></a>
-                </div>
-            </section>
-
-            <section id="graduation" class="gallery-section">
-                <h2>WSHS Graduation 2024</h2>
-                <div class="gallery-grid">
-                    <a href="images/photographyPortfolio/wshs-2024-graduation/1.jpeg" class="lightbox-trigger"><img src="images/photographyPortfolio/wshs-2024-graduation/1.jpeg" alt="WSHS graduation photo 1"></a>
-                    <a href="images/photographyPortfolio/wshs-2024-graduation/2.JPG" class="lightbox-trigger"><img src="images/photographyPortfolio/wshs-2024-graduation/2.JPG" alt="WSHS graduation photo 2"></a>
-                    <a href="images/photographyPortfolio/wshs-2024-graduation/3.jpeg" class="lightbox-trigger"><img src="images/photographyPortfolio/wshs-2024-graduation/3.jpeg" alt="WSHS graduation photo 3"></a>
-                    <a href="images/photographyPortfolio/wshs-2024-graduation/4.jpeg" class="lightbox-trigger"><img src="images/photographyPortfolio/wshs-2024-graduation/4.jpeg" alt="WSHS graduation photo 4"></a>
-                    <a href="images/photographyPortfolio/wshs-2024-graduation/5.jpeg" class="lightbox-trigger"><img src="images/photographyPortfolio/wshs-2024-graduation/5.jpeg" alt="WSHS graduation photo 5"></a>
-                    <a href="images/photographyPortfolio/wshs-2024-graduation/6.jpeg" class="lightbox-trigger"><img src="images/photographyPortfolio/wshs-2024-graduation/6.jpeg" alt="WSHS graduation photo 6"></a>
-                </div>
-            </section>
-
-            <section id="kiya" class="gallery-section">
-                <h2>Kiya's Senior Portraits 2024</h2>
-                <div class="gallery-grid">
-                    <a href="images/photographyPortfolio/kiya-senior-portraits/1.jpg" class="lightbox-trigger"><img src="images/photographyPortfolio/kiya-senior-portraits/1.jpg" alt="Kiya senior portrait 1"></a>
-                    <a href="images/photographyPortfolio/kiya-senior-portraits/3.jpg" class="lightbox-trigger"><img src="images/photographyPortfolio/kiya-senior-portraits/3.jpg" alt="Kiya senior portrait 3"></a>
-                    <a href="images/photographyPortfolio/kiya-senior-portraits/4.jpg" class="lightbox-trigger"><img src="images/photographyPortfolio/kiya-senior-portraits/4.jpg" alt="Kiya senior portrait 4"></a>
-                    <a href="images/photographyPortfolio/kiya-senior-portraits/2.jpg" class="lightbox-trigger"><img src="images/photographyPortfolio/kiya-senior-portraits/2.jpg" alt="Kiya senior portrait 2"></a>
-                </div>
-            </section>
-
-            <section id="diana" class="gallery-section">
-                <h2>Diana's Senior Portraits 2024</h2>
-                <div class="gallery-grid">
-                    <a href="images/photographyPortfolio/diana-senior-portraits/1.jpg" class="lightbox-trigger"><img src="images/photographyPortfolio/diana-senior-portraits/1.jpg" alt="Diana senior portrait 1"></a>
-                    <a href="images/photographyPortfolio/diana-senior-portraits/2.jpg" class="lightbox-trigger"><img src="images/photographyPortfolio/diana-senior-portraits/2.jpg" alt="Diana senior portrait 2"></a>
-                    <a href="images/photographyPortfolio/diana-senior-portraits/3.jpg" class="lightbox-trigger"><img src="images/photographyPortfolio/diana-senior-portraits/3.jpg" alt="Diana senior portrait 3"></a>
-                    <a href="images/photographyPortfolio/diana-senior-portraits/4.jpg" class="lightbox-trigger"><img src="images/photographyPortfolio/diana-senior-portraits/4.jpg" alt="Diana senior portrait 4"></a>
-                </div>
-            </section>
-
-            <section id="yosemite" class="gallery-section">
-                <h2>Yosemite 2023</h2>
-                <div class="gallery-grid">
-                    <a href="images/photographyPortfolio/yosemite/1.jpg" class="lightbox-trigger"><img src="images/photographyPortfolio/yosemite/1.jpg" alt="Yosemite landscape 1"></a>
-                    <a href="images/photographyPortfolio/yosemite/2.jpg" class="lightbox-trigger"><img src="images/photographyPortfolio/yosemite/2.jpg" alt="Yosemite landscape 2"></a>
-                    <a href="images/photographyPortfolio/yosemite/3.jpg" class="lightbox-trigger"><img src="images/photographyPortfolio/yosemite/3.jpg" alt="Yosemite landscape 3"></a>
-                </div>
-            </section>
-
-            <section class="photo-footer-cta">
-                <p>Want to see where this started? My high school photography site has some of my earlier work and the foundation of how I learned to shoot.</p>
-                <a href="https://sites.google.com/view/cloesphotos/home" class="photo-footer-link" target="_blank" rel="noopener noreferrer">View My High School Photography Site</a>
-            </section>
-        </div>
-    </main>
-    <div class="lightbox" id="lightbox" aria-hidden="true">
-        <div class="lightbox-dialog" role="dialog" aria-modal="true" aria-label="Expanded photo view">
-            <button class="lightbox-nav lightbox-prev" id="lightboxPrev" type="button" aria-label="Previous image">&#8249;</button>
-            <button class="lightbox-nav lightbox-next" id="lightboxNext" type="button" aria-label="Next image">&#8250;</button>
-            <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close image view">&times;</button>
-            <img id="lightboxImage" src="" alt="">
-        </div>
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="photography.html">Photography</a></li>
+            <li><a href="services.html#contact" class="btn btn-primary">Get in touch</a></li>
+        </ul>
     </div>
-    <script>
-        const lightbox = document.getElementById('lightbox');
-        const lightboxImage = document.getElementById('lightboxImage');
-        const lightboxClose = document.getElementById('lightboxClose');
-        const lightboxPrev = document.getElementById('lightboxPrev');
-        const lightboxNext = document.getElementById('lightboxNext');
-        const lightboxTriggers = document.querySelectorAll('.lightbox-trigger');
-        let activeGallery = [];
-        let activeIndex = 0;
 
-        function renderLightboxImage() {
-            const activeTrigger = activeGallery[activeIndex];
+    <main id="main">
 
-            if (!activeTrigger) {
-                return;
-            }
+        <section class="photo-hero">
+            <img class="photo-hero-img" src="images/shoots/joshua-tree/04.jpg" alt="Joshua Tree boulders under a blue sky" fetchpriority="high">
+            <div class="photo-hero-shade"></div>
+            <div class="container photo-hero-inner">
+                <p class="eyebrow" style="--c:var(--gold)">Photography</p>
+                <h1>Collected moments through my lens</h1>
+                <p class="lede">Portraits, events, and the landscapes I chase on weekends. Pick a shoot below to see the full set.</p>
+                <a class="scroll-cue" href="#shoots">See the work <span aria-hidden="true">&darr;</span></a>
+            </div>
+        </section>
 
-            const image = activeTrigger.querySelector('img');
-            lightboxImage.src = activeTrigger.getAttribute('href');
-            lightboxImage.alt = image ? image.alt : '';
-        }
+        <section class="section edge-top shoots-section" style="--sec-bg:var(--linen)" id="shoots">
+            <div class="container">
+                <div class="section-head reveal">
+                    <p class="eyebrow" style="--c:var(--tangerine)">Portfolio</p>
+                    <h2>Pick a shoot to explore</h2>
+                    <div class="filters" id="filters" role="group" aria-label="Filter shoots"></div>
+                </div>
+                <div class="covers" id="covers"></div>
+                <noscript><p class="portfolio-error">Please turn on JavaScript to browse the portfolio.</p></noscript>
+            </div>
+        </section>
 
-        function openLightbox(trigger) {
-            const gallerySection = trigger.closest('.gallery-section');
-            activeGallery = gallerySection ? Array.from(gallerySection.querySelectorAll('.lightbox-trigger')) : [trigger];
-            activeIndex = Math.max(activeGallery.indexOf(trigger), 0);
-            renderLightboxImage();
-            lightbox.classList.add('is-open');
-            lightbox.setAttribute('aria-hidden', 'false');
-            document.body.style.overflow = 'hidden';
-        }
+        <section class="origin">
+            <div class="container">
+                <div class="origin-strip reveal">
+                    <span class="origin-icon" aria-hidden="true"></span>
+                    <div class="origin-text">
+                        <h3>Where I learned to shoot</h3>
+                        <p>My high school photography site has some of my earlier work and the foundation of how I learned to shoot.</p>
+                    </div>
+                    <a class="btn btn-secondary" href="https://sites.google.com/view/cloesphotos/home" target="_blank" rel="noopener noreferrer">View the site &nearr;</a>
+                </div>
+            </div>
+        </section>
 
-        function showRelativeImage(direction) {
-            if (!activeGallery.length) {
-                return;
-            }
+        <section class="section cta-band edge-top bg-ocean">
+            <div class="piece-layer" aria-hidden="true">
+                <span class="piece fly" data-depth="0.7" style="--s:120px;--c:rgba(255,255,255,.14);--r:-12deg;left:-30px;top:20px;--dur:9s"></span>
+                <span class="piece fly alt" data-depth="-0.9" style="--s:150px;--c:rgba(255,255,255,.12);--r:22deg;right:-40px;bottom:-20px;--d:.2s;--dur:10s"></span>
+                <span class="piece fly" data-depth="0.5" style="--s:70px;--c:var(--gold);--r:10deg;right:14%;top:14%;--d:.4s"></span>
+            </div>
+            <div class="container reveal">
+                <h2 style="color:#fff">Ready to work together?</h2>
+                <p style="color:rgba(255,255,255,.88)">Whether you need a tutor, a photographer, or a tech consultant, I'd love to hear what you're working on.</p>
+                <div class="btn-row">
+                    <a href="services.html#contact" class="btn btn-light">Get in touch</a>
+                    <a href="services.html?service=Photography#contact" class="btn btn-ghost">Photography services</a>
+                </div>
+            </div>
+        </section>
 
-            activeIndex = (activeIndex + direction + activeGallery.length) % activeGallery.length;
-            renderLightboxImage();
-        }
+        <div class="gallery-modal" id="gallery" role="dialog" aria-modal="true" aria-label="Shoot gallery" aria-hidden="true">
+            <div class="gm-panel">
+            <div class="gm-head"><div class="container gm-head-inner">
+                <div><span class="gm-count" id="gmCount"></span><h2 id="gmTitle"></h2></div>
+                <button class="gm-close" type="button" aria-label="Close gallery">&times;</button>
+            </div></div>
+            <div class="gm-body"><div class="container">
+                <div class="gm-grid" id="gmGrid"></div>
+                <div class="gm-foot"><a class="btn btn-primary" href="services.html?service=Photography#contact">Want photos like these? Let&rsquo;s talk</a></div>
+            </div></div>
+            </div>
+        </div>
 
-        function closeLightbox() {
-            lightbox.classList.remove('is-open');
-            lightbox.setAttribute('aria-hidden', 'true');
-            lightboxImage.src = '';
-            lightboxImage.alt = '';
-            activeGallery = [];
-            activeIndex = 0;
-            document.body.style.overflow = '';
-        }
+        <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" aria-hidden="true">
+            <button class="lb-btn lb-close" type="button" aria-label="Close">&times;</button>
+            <div class="lb-stage"><img id="lbImage" src="" alt=""></div>
+            <div class="lb-bar">
+                <button class="lb-btn lb-prev" type="button" aria-label="Previous photo">&#8249;</button>
+                <div class="lb-info"><span class="lb-title" id="lbTitle"></span><span class="lb-count" id="lbCount"></span></div>
+                <button class="lb-btn lb-next" type="button" aria-label="Next photo">&#8250;</button>
+                <a class="btn btn-primary lb-cta" href="services.html?service=Photography#contact">Want photos like these? Let&rsquo;s talk &rarr;</a>
+            </div>
+        </div>
 
-        lightboxTriggers.forEach((trigger) => {
-            trigger.addEventListener('click', (event) => {
-                event.preventDefault();
-                openLightbox(trigger);
-            });
-        });
+    </main>
 
-        lightboxPrev.addEventListener('click', () => showRelativeImage(-1));
-        lightboxNext.addEventListener('click', () => showRelativeImage(1));
-        lightboxClose.addEventListener('click', closeLightbox);
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <a href="index.html" class="footer-brand">Cloe <span class="logo-last">Wemett</span></a>
+            <nav class="footer-nav" aria-label="Footer">
+                <a href="about.html">About</a><a href="services.html">Services</a><a href="photography.html">Photography</a><a href="services.html#contact">Contact</a>
+            </nav>
+            <p class="footer-copy">© 2026 Cloe Wemett · San Diego, CA</p>
+        </div>
+    </footer>
 
-        lightbox.addEventListener('click', (event) => {
-            if (event.target === lightbox) {
-                closeLightbox();
-            }
-        });
-
-        document.addEventListener('keydown', (event) => {
-            if (!lightbox.classList.contains('is-open')) {
-                return;
-            }
-
-            if (event.key === 'Escape') {
-                closeLightbox();
-            } else if (event.key === 'ArrowLeft') {
-                showRelativeImage(-1);
-            } else if (event.key === 'ArrowRight') {
-                showRelativeImage(1);
-            }
-        });
-    </script>
+    <script src="shoots.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

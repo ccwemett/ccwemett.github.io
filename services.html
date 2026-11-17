@@ -1,377 +1,176 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services - Cloe Wemett</title>
+    <title>Services · Cloe Wemett</title>
+    <meta name="description" content="Math and programming tutoring, portrait and brand photography, and small business consulting in San Diego.">
+    <meta name="theme-color" content="#f4e9e1">
+    <meta property="og:title" content="Services · Cloe Wemett">
+    <meta property="og:description" content="Math and programming tutoring, portrait and brand photography, and small business consulting in San Diego.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://ccwemett.com/images/site/headshot.jpg">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Cpath fill='%23f475a7' d='M20,20 H50 C50,12 44,12 44,7 C44,1 51,2 60,2 C69,2 76,1 76,7 C76,12 70,12 70,20 H100 V50 C108,50 108,44 113,44 C119,44 118,51 118,60 C118,69 119,76 113,76 C108,76 108,70 100,70 V100 H70 C70,92 76,92 76,87 C76,81 69,82 60,82 C51,82 44,81 44,87 C44,92 50,92 50,100 H20 V70 C28,70 28,76 33,76 C39,76 38,69 38,60 C38,51 39,44 33,44 C28,44 28,50 20,50 Z'/%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <a href="#main" class="skip-link">Skip to content</a>
 
-    <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Main">
         <div class="nav-container">
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <a href="index.html" class="nav-brand" aria-label="Cloe Wemett home">
-                <span class="logo-first">Cloe</span>
-                <span class="logo-last">Wemett</span>
-            </a>
+            <a href="index.html" class="nav-brand" aria-label="Cloe Wemett home"><span>Cloe</span> <span class="logo-last">Wemett</span></a>
             <ul class="nav-links">
                 <li><a href="about.html">About</a></li>
-                <li><a href="services.html" class="nav-active">Services</a></li>
+                <li><a class="nav-active" aria-current="page" href="services.html">Services</a></li>
                 <li><a href="photography.html">Photography</a></li>
             </ul>
-            <div class="nav-contact-button">
-                <a href="#contact" class="btn-touch">Get In Touch</a>
-            </div>
-        </div>
-        <div class="mobile-menu" id="mobileMenu">
-            <ul class="mobile-nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="photography.html">Photography</a></li>
-                <li><a href="#contact" class="btn-touch" style="display:inline-block;margin-top:8px;">Get In Touch</a></li>
-            </ul>
+            <a href="services.html#contact" class="btn btn-primary nav-cta">Get in touch</a>
+            <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
         </div>
     </nav>
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="photography.html">Photography</a></li>
+            <li><a href="services.html#contact" class="btn btn-primary">Get in touch</a></li>
+        </ul>
+    </div>
 
-    <!-- Page Hero -->
-    <section class="page-hero">
-        <div class="container">
-            <div class="page-hero-content">
-                <p class="page-hero-eyebrow">Let's Work Together</p>
-                <h1>Services</h1>
-                <p class="page-hero-subtitle">Tutoring, photography, and small business consulting. All tailored to what you actually need.</p>
+    <main id="main">
+
+        <section class="page-hero">
+            <div class="piece-layer" aria-hidden="true">
+                <span class="piece fly" data-depth="0.8" style="--s:110px;--c:var(--ocean);--r:-10deg;right:8%;top:16%;--d:0.0s;--dur:7s"></span>
+                <span class="piece fly alt" data-depth="-1" style="--s:80px;--c:var(--rose);--r:20deg;right:26%;bottom:10%;--d:0.1s;--dur:8s"></span>
+                <span class="piece fly" data-depth="0.6" style="--s:70px;--c:var(--green);--r:-30deg;right:-18px;bottom:34%;--d:0.2s;--dur:9s"></span>
             </div>
-        </div>
-    </section>
-
-    <!-- Tutoring -->
-    <section class="service-section" id="tutoring">
-        <div class="container">
-            <div class="service-section-inner">
-                <div class="service-section-header">
-                    <div class="service-section-icon" style="background: rgba(21,107,191,0.12); color: var(--primary-blue);">📚</div>
-                    <div>
-                        <p class="service-section-eyebrow">Learn &amp; Grow</p>
-                        <h2>Math &amp; Programming Tutoring</h2>
-                    </div>
+            <div class="container">
+                <p class="eyebrow" style="--c:var(--rose)">Let's work together</p>
+                <h1>Services</h1>
+                <p class="lede">Tutoring, photography, and small business consulting. All tailored to what you actually need.</p>
+                <div class="btn-row">
+                    <a href="#tutoring" class="btn btn-secondary">Tutoring</a>
+                    <a href="#photography" class="btn btn-secondary">Photography</a>
+                    <a href="#consulting" class="btn btn-secondary">Consulting</a>
                 </div>
+            </div>
+        </section>
 
-                <div class="service-section-body">
-                    <div class="service-description">
+        <section class="svc edge-top bg-paper tint-blue" id="tutoring">
+            <div class="container">
+                <div class="svc-head reveal"><span class="svc-badge" style="--c:var(--ocean)"></span><div><p class="eyebrow" style="--c:var(--ocean)">Learn &amp; grow</p><h2>Math &amp; Programming Tutoring</h2></div></div>
+                <div class="svc-body">
+                    <div class="reveal">
                         <p>Whether it's fractions in 4th grade or debugging a Python script in college, I meet students exactly where they are. With a Computer Science degree from UC Berkeley, a STEM Education minor, and 6+ years coaching 100+ students at The Coder School, I know how to make challenging material click.</p>
                         <p>I adapt to your learning style, move at your pace, and make sure you walk away with the confidence to solve the next problem on your own.</p>
-
-                        <div class="service-offers">
-                            <h3>What I Tutor</h3>
-                            <div class="service-offers-grid">
-                                <div class="service-offer-card">
-                                    <span class="offer-icon">🔢</span>
-                                    <h4>Math</h4>
-                                    <p>Elementary through college-level: arithmetic, algebra, geometry, pre-calc, calculus, statistics, and more.</p>
-                                </div>
-                                <div class="service-offer-card">
-                                    <span class="offer-icon">💻</span>
-                                    <h4>Programming</h4>
-                                    <p>Scratch, Python, Java, JavaScript, HTML/CSS, and more. Beginners welcome. AP CS and college coursework too.</p>
-                                </div>
-                                <div class="service-offer-card">
-                                    <span class="offer-icon">🧠</span>
-                                    <h4>Test Prep &amp; Study Skills</h4>
-                                    <p>SAT/ACT math, AP exam prep, and building the habits and systems that make learning stick long-term.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="service-details-row">
-                            <div class="service-detail-pill">✅ All ages welcome</div>
-                            <div class="service-detail-pill">✅ In-person or remote</div>
-                            <div class="service-detail-pill">✅ 1-on-1 sessions</div>
-                            <div class="service-detail-pill">✅ Flexible scheduling</div>
-                        </div>
+                        <h3 class="offers-title">What I tutor</h3>
+                        <div style="--c:var(--ocean)"><div class="offers"><div class="offer"><h4>Math</h4><p>Elementary through college-level: arithmetic, algebra, geometry, pre-calc, calculus, statistics, and more.</p></div><div class="offer"><h4>Programming</h4><p>Scratch, Python, Java, JavaScript, HTML/CSS, and more. Beginners welcome. AP CS and college coursework too.</p></div><div class="offer"><h4>Test prep &amp; study skills</h4><p>SAT/ACT math, AP exam prep, and building the habits and systems that make learning stick long-term.</p></div></div></div>
                     </div>
-
-                    <div class="service-section-aside">
-                        <div class="service-aside-card">
-                            <div class="puzzle-piece" aria-hidden="true" style="position:absolute;width:88px;height:85px;top:-24px;right:-20px;background-image:url('./images/puzzlePieces/blue-2.png');background-repeat:no-repeat;background-size:contain;transform:rotate(14deg);opacity:0.9;filter:drop-shadow(0 10px 20px rgba(21,107,191,0.18));pointer-events:none;z-index:-1;"></div>
-                            <h3>By The Numbers</h3>
-                            <div class="aside-stat">
-                                <span class="aside-stat-number">100+</span>
-                                <span class="aside-stat-label">Students mentored</span>
-                            </div>
-                            <div class="aside-stat">
-                                <span class="aside-stat-number">6+</span>
-                                <span class="aside-stat-label">Years of coaching experience</span>
-                            </div>
-                            <div class="aside-stat">
-                                <span class="aside-stat-number">5+</span>
-                                <span class="aside-stat-label">Languages taught</span>
-                            </div>
-                            <div class="aside-stat">
-                                <span class="aside-stat-number">🏆</span>
-                                <span class="aside-stat-label">Students placed in competitions</span>
-                            </div>
+                    <aside class="aside-card reveal" style="--c:var(--ocean-deep)">
+                        <h3>By the numbers</h3>
+                        <div class="stats">
+                            <div class="stat"><b>100+</b><span>Students mentored</span></div>
+                            <div class="stat"><b>6+</b><span>Years of coaching</span></div>
+                            <div class="stat"><b>5+</b><span>Languages taught</span></div>
+                            <div class="stat"><b>🏆</b><span>Students placed in competitions</span></div>
                         </div>
-                    </div>
+                    </aside>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Photography -->
-    <section class="service-section service-section-alt" id="photography">
-        <div class="container">
-            <div class="service-section-inner">
-                <div class="service-section-header">
-                    <div class="service-section-icon" style="background: rgba(244,117,167,0.14); color: var(--rose-kiss);">📷</div>
-                    <div>
-                        <p class="service-section-eyebrow">Capture the Moment</p>
-                        <h2>Photography</h2>
-                    </div>
-                </div>
-
-                <div class="service-section-body">
-                    <div class="service-description">
+        <section class="svc edge-top tint-rose" style="--sec-bg:var(--linen)" id="photography">
+            <div class="container">
+                <div class="svc-head reveal"><span class="svc-badge" style="--c:var(--rose)"></span><div><p class="eyebrow" style="--c:var(--rose)">Capture the moment</p><h2>Photography</h2></div></div>
+                <div class="svc-body">
+                    <div class="reveal">
                         <p>I picked up a camera in high school and never really put it down. What started as a class project became a genuine love for capturing the details and personalities that make every subject worth photographing.</p>
                         <p>Good photos do more than look nice. I take the time to understand what you're going for before I ever pick up the camera, and I collaborate closely throughout to make sure the final images actually feel like yours.</p>
-
-                        <div class="service-offers">
-                            <h3>What I Shoot</h3>
-                            <div class="service-offers-grid">
-                                <div class="service-offer-card">
-                                    <span class="offer-icon">🧑‍🤝‍🧑</span>
-                                    <h4>Portraits</h4>
-                                    <p>Senior portraits, headshots, family sessions, and personal branding portraits that actually look like you.</p>
-                                </div>
-                                <div class="service-offer-card">
-                                    <span class="offer-icon">🏪</span>
-                                    <h4>Brand Shoots</h4>
-                                    <p>Product photography, lifestyle content, and brand identity images for small businesses and entrepreneurs.</p>
-                                </div>
-                                <div class="service-offer-card">
-                                    <span class="offer-icon">🎉</span>
-                                    <h4>Small Events</h4>
-                                    <p>Graduations, milestone celebrations, pop-up events, and community gatherings you'll want to remember.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="service-details-row">
-                            <div class="service-detail-pill">✅ San Diego area &amp; beyond</div>
-                            <div class="service-detail-pill">✅ Edited gallery delivered</div>
-                            <div class="service-detail-pill">✅ Lightroom editing</div>
-                        </div>
-
-                        <a href="photography.html" class="btn btn-primary" style="margin-top:28px;display:inline-block;">View My Portfolio →</a>
+                        <h3 class="offers-title">What I shoot</h3>
+                        <div style="--c:var(--rose)"><div class="offers"><div class="offer"><h4>Portraits</h4><p>Senior portraits, headshots, family sessions, and personal branding portraits that actually look like you.</p></div><div class="offer"><h4>Brand shoots</h4><p>Product photography, lifestyle content, and brand identity images for small businesses and entrepreneurs.</p></div><div class="offer"><h4>Small events</h4><p>Graduations, milestone celebrations, pop-up events, and community gatherings you&rsquo;ll want to remember.</p></div></div></div>
+                        <div class="btn-row"><a href="photography.html" class="btn btn-primary">View my portfolio →</a></div>
                     </div>
-
-                    <div class="service-section-aside">
-                        <div class="service-aside-card" style="--aside-accent: var(--rose-kiss);">
-                            <div class="puzzle-piece" aria-hidden="true" style="position:absolute;width:88px;height:85px;top:-24px;right:-20px;background-image:url('./images/puzzlePieces/pink-1.png');background-repeat:no-repeat;background-size:contain;transform:rotate(-12deg);opacity:0.9;filter:drop-shadow(0 10px 20px rgba(244,117,167,0.18));pointer-events:none;z-index:-1;"></div>
-                            <h3>Portfolio Highlights</h3>
-                            <ul class="aside-list">
-                                <li>Senior portraits (Kiya, Diana)</li>
-                                <li>World of Coffee 2026 (event coverage)</li>
-                                <li>Joshua Tree landscapes</li>
-                                <li>Yosemite landscapes</li>
-                                <li>WSHS Class of 2024 graduation</li>
-                                <li>Miscellaneous landscapes</li>
-                            </ul>
-                        </div>
-                    </div>
+                    <aside class="aside-card reveal" style="--c:var(--rose)">
+                        <h3>Portfolio highlights</h3>
+                        <ul class="check-list">
+                            <li>Senior portraits (Kiya, Diana)</li><li>World of Coffee 2026 (event coverage)</li><li>Joshua Tree landscapes</li><li>Yosemite landscapes</li><li>WSHS Class of 2024 graduation</li><li>Miscellaneous landscapes</li>
+                        </ul>
+                    </aside>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Consulting -->
-    <section class="service-section" id="consulting">
-        <div class="container">
-            <div class="service-section-inner">
-                <div class="service-section-header">
-                    <div class="service-section-icon" style="background: rgba(76,150,34,0.12); color: var(--forest-green);">💡</div>
-                    <div>
-                        <p class="service-section-eyebrow">Work Smarter</p>
-                        <h2>Small Business Consulting</h2>
-                    </div>
-                </div>
-
-                <div class="service-section-body">
-                    <div class="service-description">
-                        <p>Running a small business is a lot. The day-to-day operations, customer relationships, and everything in between add up fast, and the tech side of things can feel like a second job. I help small business owners get set up with the right tools, automate the tedious stuff, and use AI to put real time back in their hands.</p>
+        <section class="svc edge-top bg-paper tint-green" id="consulting">
+            <div class="container">
+                <div class="svc-head reveal"><span class="svc-badge" style="--c:var(--green)"></span><div><p class="eyebrow" style="--c:var(--green)">Work smarter</p><h2>Small Business Consulting</h2></div></div>
+                <div class="svc-body">
+                    <div class="reveal">
+                        <p>Running a small business is a lot. The day-to-day operations, customer relationships, and everything in between add up fast, and the tech side of things can feel like a second job. I help small business owners get set up with the right tools, automate the tasks that eat up their time, and make technology work for them instead of against them.</p>
                         <p>I've worked inside tech companies (Sourcegraph, Atlassian), built software, and spent years managing restaurant operations including POS systems across multiple locations. I understand both sides of the counter.</p>
-
-                        <div class="service-offers">
-                            <h3>What I Can Help With</h3>
-                            <div class="service-offers-grid">
-                                <div class="service-offer-card">
-                                    <span class="offer-icon">🖥️</span>
-                                    <h4>POS &amp; Tech Setup</h4>
-                                    <p>Point-of-sale systems, payment processing, inventory tools, and the software that runs your day-to-day.</p>
-                                </div>
-                                <div class="service-offer-card">
-                                    <span class="offer-icon">🤖</span>
-                                    <h4>AI Solutions</h4>
-                                    <p>Custom AI workflows that handle repetitive tasks like scheduling, customer follow-ups, content drafting, and more.</p>
-                                </div>
-                                <div class="service-offer-card">
-                                    <span class="offer-icon">⚙️</span>
-                                    <h4>Workflow Automation</h4>
-                                    <p>Connecting your tools so they work together, reducing manual data entry and freeing up your time for what matters.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="service-details-row">
-                            <div class="service-detail-pill">✅ Remote or in-person</div>
-                            <div class="service-detail-pill">✅ No jargon, just clarity</div>
-                            <div class="service-detail-pill">✅ Ongoing support available</div>
-                        </div>
+                        <h3 class="offers-title">What I can help with</h3>
+                        <div style="--c:var(--green)"><div class="offers"><div class="offer"><h4>POS &amp; tech setup</h4><p>Point-of-sale systems, payment processing, inventory tools, and the software that runs your day-to-day.</p></div><div class="offer"><h4>AI solutions</h4><p>Custom AI workflows that handle repetitive tasks like scheduling, customer follow-ups, content drafting, and more.</p></div><div class="offer"><h4>Workflow automation</h4><p>Connecting your tools so they work together, reducing manual data entry and freeing up your time for what matters.</p></div></div></div>
                     </div>
-
-                    <div class="service-section-aside">
-                        <div class="service-aside-card" style="--aside-accent: var(--forest-green);">
-                            <div class="puzzle-piece" aria-hidden="true" style="position:absolute;width:88px;height:85px;top:-24px;right:-20px;background-image:url('./images/puzzlePieces/green-2.png');background-repeat:no-repeat;background-size:contain;transform:rotate(10deg);opacity:0.9;filter:drop-shadow(0 10px 20px rgba(76,150,34,0.18));pointer-events:none;z-index:-1;"></div>
-                            <h3>Why Work With Me?</h3>
-                            <ul class="aside-list">
-                                <li>CS degree from UC Berkeley</li>
-                                <li>2+ years at Atlassian (enterprise tech support)</li>
-                                <li>Managed POS systems across 3 locations</li>
-                                <li>Currently: Senior Engineer at Sourcegraph</li>
-                                <li>I explain things clearly, with no tech overwhelm</li>
-                            </ul>
-                        </div>
-                    </div>
+                    <aside class="aside-card reveal" style="--c:var(--green)">
+                        <h3>Why work with me?</h3>
+                        <ul class="check-list">
+                            <li>CS degree from UC Berkeley</li><li>2+ years at Atlassian (enterprise tech support)</li><li>Managed POS systems across 3 locations</li><li>Currently: Senior Engineer at Sourcegraph</li><li>I explain things clearly, with no tech overwhelm</li>
+                        </ul>
+                    </aside>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact / Inquiry Form -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="contact-header">
-                <p class="contact-eyebrow">Let's Talk</p>
-                <h2>Get In Touch</h2>
-                <p class="contact-subtitle">Tell me a little about what you're looking for and I'll get back to you within a couple of days.</p>
-            </div>
-
-            <div class="contact-content">
-                <div class="contact-grid">
-                    <div class="contact-method">
-                        <div class="method-icon-wrapper">
-                            <span class="method-icon">📍</span>
-                        </div>
-                        <div class="method-content">
-                            <h3>Based In</h3>
-                            <p>San Diego, CA</p>
-                        </div>
-                    </div>
-                    <div class="contact-method">
-                        <div class="method-icon-wrapper">
-                            <span class="method-icon">📄</span>
-                        </div>
-                        <div class="method-content">
-                            <h3>Resume</h3>
-                            <a href="documents/CloeWemettResume2026.pdf" target="_blank" class="contact-link">Download Resume</a>
-                        </div>
-                    </div>
-                    <div class="contact-method">
-                        <div class="method-icon-wrapper">
-                            <span class="method-icon">💼</span>
-                        </div>
-                        <div class="method-content">
-                            <h3>LinkedIn</h3>
-                            <a href="https://linkedin.com/in/cloe-wemett" target="_blank" class="contact-link">linkedin.com/in/cloe-wemett</a>
-                        </div>
-                    </div>
-                    <div class="contact-method">
-                        <div class="method-icon-wrapper">
-                            <span class="method-icon">💾</span>
-                        </div>
-                        <div class="method-content">
-                            <h3>GitHub</h3>
-                            <a href="https://github.com/ccwemett" target="_blank" class="contact-link">github.com/ccwemett</a>
-                        </div>
+        <section class="section edge-top bg-ink" id="contact">
+            <div class="container contact-grid">
+                <div class="reveal">
+                    <p class="eyebrow" style="--c:var(--gold)">Let's talk</p>
+                    <h2>Get in touch</h2>
+                    <p class="lede">Tell me a little about what you're looking for and I'll get back to you within a couple of days.</p>
+                    <div class="contact-links">
+                        <div><h3>Email</h3><a href="mailto:cloe@ccwemett.com">cloe@ccwemett.com</a></div>
+                        <div><h3>Based in</h3><p>San Diego, CA</p></div>
+                        <div><h3>Resume</h3><a href="documents/CloeWemettResume2026.pdf" target="_blank" rel="noopener">Download resume</a></div>
+                        <div><h3>LinkedIn</h3><a href="https://linkedin.com/in/cloe-wemett" target="_blank" rel="noopener">linkedin.com/in/cloe-wemett</a></div>
+                        <div><h3>GitHub</h3><a href="https://github.com/ccwemett" target="_blank" rel="noopener">github.com/ccwemett</a></div>
                     </div>
                 </div>
-
-                <form class="contact-form" id="contactForm">
-                    <div class="contact-form-header">
-                        <p class="contact-form-kicker">Send a message</p>
-                        <h3>Start the conversation</h3>
-                        <p class="contact-form-intro">Share what you're looking for and I'll get back to you within a couple of days.</p>
-                    </div>
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required placeholder="Your name">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required placeholder="your@email.com">
-                    </div>
-                    <div class="form-group">
-                        <label for="service">I'm interested in…</label>
+                <form class="form-card reveal" id="contactForm">
+                    <h3>Start the conversation</h3>
+                    <p>Share what you're looking for and I'll be in touch.</p>
+                    <div class="field"><label for="name">Name</label><input type="text" id="name" name="name" required autocomplete="name" placeholder="Your name"></div>
+                    <div class="field"><label for="email">Email</label><input type="email" id="email" name="email" required autocomplete="email" placeholder="you@email.com"></div>
+                    <div class="field"><label for="service">I'm interested in…</label>
                         <select id="service" name="service" required>
                             <option value="" disabled selected>Select a service</option>
-                            <option value="Math &amp; Programming Tutoring">📚 Math &amp; Programming Tutoring</option>
-                            <option value="Photography">📷 Photography</option>
-                            <option value="Small Business Consulting">💡 Small Business Consulting</option>
-                            <option value="Something Else">Something else (I'll explain below)</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Tell me more</label>
-                        <textarea id="message" name="message" rows="5" required placeholder="What are you working on? Any details about timing, goals, or what you need help with are super helpful."></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
+                            <option>Math &amp; Programming Tutoring</option>
+                            <option>Photography</option>
+                            <option>Small Business Consulting</option>
+                            <option>Something else</option>
+                        </select></div>
+                    <div class="field"><label for="message">Tell me more</label><textarea id="message" name="message" required placeholder="What are you working on? Timing, goals, or what you need help with are all super helpful."></textarea></div>
+                    <button type="submit" class="btn btn-primary">Send message</button>
+                    <p class="form-note">This opens your email app with everything filled in, ready to send.</p>
                 </form>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
+    </main>
+
     <footer class="site-footer">
-        <div class="container">
-            <div class="footer-inner">
-                <a href="index.html" class="footer-brand">
-                    <span class="logo-first">Cloe</span>
-                    <span class="logo-last">Wemett</span>
-                </a>
-                <nav class="footer-nav" aria-label="Footer navigation">
-                    <a href="about.html">About</a>
-                    <a href="services.html">Services</a>
-                    <a href="photography.html">Photography</a>
-                    <a href="#contact">Contact</a>
-                </nav>
-                <p class="footer-copy">© 2026 Cloe Wemett · San Diego, CA</p>
-            </div>
+        <div class="container footer-inner">
+            <a href="index.html" class="footer-brand">Cloe <span class="logo-last">Wemett</span></a>
+            <nav class="footer-nav" aria-label="Footer">
+                <a href="about.html">About</a><a href="services.html">Services</a><a href="photography.html">Photography</a><a href="services.html#contact">Contact</a>
+            </nav>
+            <p class="footer-copy">© 2026 Cloe Wemett · San Diego, CA</p>
         </div>
     </footer>
 
     <script src="script.js"></script>
-    <script>
-        // Override contact form for service-specific inquiry
-        const contactForm = document.getElementById('contactForm');
-        if (contactForm) {
-            contactForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-                const name = document.getElementById('name').value;
-                const email = document.getElementById('email').value;
-                const service = document.getElementById('service').value;
-                const message = document.getElementById('message').value;
-                const subject = `Service Inquiry: ${service}`;
-                const body = `Name: ${name}\nEmail: ${email}\nService: ${service}\n\nMessage:\n${message}`;
-                window.location.href = `mailto:cloe@ccwemett.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-                this.reset();
-            });
-        }
-    </script>
 </body>
 </html>

@@ -1,0 +1,6 @@
+# Full-size photos live on your computer only (not published, not in git)
+originals/
+
+# macOS / editor / local tooling
+.DS_Store
+.claude/
